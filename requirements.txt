@@ -1,0 +1,29 @@
+# AI Hair Influencer Curation Agent - Requirements
+
+# Web Server
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ML & Embeddings (optional - for advanced features)
+# sentence-transformers>=2.2.0
+# torch>=2.0.0
+
+# OpenAI API (for image analysis)
+openai>=1.0.0
+httpx>=0.25.0
+
+# Pydantic
+pydantic>=2.0.0
+
+# Utils
+python-dotenv>=1.0.0
+
+# Instagram Graph API & Web Crawling
+requests>=2.31.0
+urllib3>=2.0.0
+beautifulsoup4>=4.12.0

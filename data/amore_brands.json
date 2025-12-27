@@ -1,0 +1,103 @@
+{
+  "brands": {
+    "려": {
+      "brand_name": "려",
+      "brand_name_en": "Ryo",
+      "slogan": "뿌리로부터 자라는 본연의 아름다움",
+      "tagline": "Natural beauty from the roots",
+      "core_values": ["한방", "두피케어", "탈모케어", "프리미엄", "아시안헤리티지"],
+      "brand_philosophy": "깊은 뿌리를 가진 나무처럼 안정적인 두피 케어. 1973년부터 축적된 두피 연구 기술과 아시안 헤리티지 기반의 천연 원료 활용",
+      "target_keywords": ["탈모", "두피", "한방", "볼륨", "안티에이징", "자양윤모", "루트젠"],
+      "aesthetic_style": "Classic",
+      "product_categories": ["샴푸", "컨디셔너", "트리트먼트", "두피케어", "탈모케어"],
+      "product_lines": ["자양윤모", "루트젠", "청아"],
+      "price_tier": "Premium",
+      "age_target": "30-50대",
+      "category": "Hair Care",
+      "launch_year": 2008
+    },
+    "미쟝센": {
+      "brand_name": "미쟝센",
+      "brand_name_en": "Mise-en-scene",
+      "slogan": "Shine Your Scene - 자신만의 무대에서 당당히 빛나다",
+      "tagline": "SHINE YOUR SCENE",
+      "core_values": ["트렌디", "자기표현", "스타일링", "혁신", "개성", "대담한변화"],
+      "brand_philosophy": "글로벌 헤어패션 브랜드로서 혁신적인 솔루션과 트렌디한 감각으로 빛나는 스타일 완성. 무대 위의 아티스트처럼 자신감 있고 당당한 이미지",
+      "target_keywords": ["스타일링", "염색", "펌", "데미지케어", "트렌드", "헤어패션"],
+      "aesthetic_style": "Trendy",
+      "product_categories": ["샴푸", "트리트먼트", "염색", "스타일링", "에센스"],
+      "product_lines": ["퍼펙트세럼", "헬로버블", "샤이닝케어"],
+      "price_tier": "Mass",
+      "age_target": "20-30대",
+      "category": "Hair Care",
+      "market_position": "대한민국 No.1 헤어 브랜드"
+    },
+    "라보에이치": {
+      "brand_name": "라보에이치",
+      "brand_name_en": "Labo-H",
+      "slogan": "두피 스킨케어 전문가",
+      "tagline": "Scalp skincare specialist",
+      "core_values": ["과학", "더마", "두피건강", "피부장벽", "전문성"],
+      "brand_philosophy": "두피는 특별한 피부라는 관점에서 출발. 아모레퍼시픽의 피부 과학 노하우를 바탕으로 두피 장벽 강화를 통해 본래 건강 회복",
+      "target_keywords": ["두피", "탈모", "과학", "더마", "민감성", "두피장벽", "스킨케어"],
+      "aesthetic_style": "Minimal",
+      "product_categories": ["샴푸", "두피케어", "탈모케어", "스케일러"],
+      "price_tier": "Premium",
+      "age_target": "25-45대",
+      "category": "Hair Care"
+    },
+    "아모스프로페셔널": {
+      "brand_name": "아모스프로페셔널",
+      "brand_name_en": "Amos Professional",
+      "slogan": "Trendy & Trustworthy Professional Hair Beauty",
+      "tagline": "Trendy & Trustworthy Professional Hair",
+      "core_values": ["전문성", "살롱", "프로페셔널", "신뢰성", "기술력", "트렌디"],
+      "brand_philosophy": "검증된 두피와 모발 솔루션으로 자신감 있는 헤어 뷰티를 완성. 신뢰할 수 있는 성분과 기술을 바탕으로 전문적인 스타일링 제공",
+      "target_keywords": ["살롱", "전문가", "시술", "염색", "펌", "프로페셔널"],
+      "aesthetic_style": "Classic",
+      "product_categories": ["염색약", "펌제", "트리트먼트", "스타일링"],
+      "price_tier": "Professional",
+      "age_target": "미용전문가",
+      "category": "Hair Care"
+    },
+    "아윤채": {
+      "brand_name": "아윤채",
+      "brand_name_en": "Ayunche",
+      "slogan": "Detailed & High Performing Salon Care",
+      "tagline": "Detailed & High Performing Salon Care",
+      "core_values": ["프리미엄", "전문성", "환경공존", "본질", "기능성"],
+      "brand_philosophy": "환경과 공존하며 나아가는 철학. 본질에 충실한 기능들을 담백하게 담아내며 디자이너의 불편함과 현실적 헤어 고민 해결",
+      "target_keywords": ["살롱", "프리미엄", "안티에이징", "윤기", "프로페셔널"],
+      "aesthetic_style": "Luxury",
+      "product_categories": ["샴푸", "트리트먼트", "에센스", "두피케어"],
+      "product_lines": ["PRO 라인 (살롱 전문가용)", "TAKE HOME 라인 (일반 소비자용)"],
+      "price_tier": "Luxury",
+      "age_target": "35-55대",
+      "category": "Hair Care"
+    },
+    "롱테이크": {
+      "brand_name": "롱테이크",
+      "brand_name_en": "Longtake",
+      "slogan": "Sustainable fragrance brand",
+      "tagline": "Sustainable fragrance brand",
+      "core_values": ["지속가능", "향수", "친환경", "클린", "감성"],
+      "brand_philosophy": "지속가능한 방식으로 만든 감성적인 향기",
+      "target_keywords": ["향수", "지속가능", "친환경", "퍼퓸", "향기"],
+      "aesthetic_style": "Minimal",
+      "product_categories": ["향수", "디퓨저"],
+      "price_tier": "Premium",
+      "age_target": "25-40대",
+      "category": "Fragrance"
+    }
+  },
+  "hair_brands": ["려", "미쟝센", "라보에이치", "아모스프로페셔널", "아윤채", "롱테이크"],
+  "categories": {
+    "Hair Care": ["려", "미쟝센", "라보에이치", "아모스프로페셔널", "아윤채", "롱테이크"]
+  },
+  "metadata": {
+    "source": "아모레퍼시픽 공식 사이트 (https://www.apgroup.com/int/ko/brands/brands.html)",
+    "last_updated": "2025-12-27",
+    "total_brands": 6,
+    "version": "2.1"
+  }
+}

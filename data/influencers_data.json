@@ -1,0 +1,5029 @@
+{
+  "influencers": [
+    {
+      "username": "hair_master_kim",
+      "followers": 85000,
+      "bio": "청담동 헤어살롱 원장 | 15년차 미용사 | 염색 & 펌 전문 | 예약문의 DM",
+      "recent_posts": [
+        {
+          "caption": "오늘의 시술 - 웜톤 고객님께 어울리는 가을 염색 레시피 공개! #염색약 #헤어컬러 #미용사일상",
+          "likes": 3200,
+          "views": 45000,
+          "comments": 89,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "C컬 펌 시술 과정 풀영상! 자연스러운 볼륨감 살리는 비법 #펌 #시술영상 #살롱",
+          "likes": 2800,
+          "views": 38000,
+          "comments": 72,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "손상모 케어 전후 비교! 클리닉 트리트먼트 효과 #헤어클리닉 #손상모케어",
+          "likes": 2100,
+          "views": 32000,
+          "comments": 56,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.92,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 3.2
+    },
+    {
+      "username": "haru_style",
+      "followers": 280000,
+      "bio": "fashion | daily",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 18500,
+          "views": 320000,
+          "comments": 856,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_001.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 16200,
+          "views": 285000,
+          "comments": 723,
+          "timestamp": "2024-12-19",
+          "thumbnail_url": "reels_thumb_002.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 15800,
+          "views": 268000,
+          "comments": 698,
+          "timestamp": "2024-12-17",
+          "thumbnail_url": "reels_thumb_003.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.08,
+        "JP": 0.07,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "minimal",
+          "modern"
+        ],
+        "color_palette": "neutral_warm",
+        "aesthetic_tags": [
+          "스트릿패션",
+          "Y2K",
+          "캐주얼",
+          "레이어드",
+          "데님"
+        ],
+        "hair_style_tags": [
+          "웨이브",
+          "레이어드컷",
+          "내추럴브라운"
+        ],
+        "vibe": "힙하고 트렌디한 MZ세대 패션 인플루언서",
+        "professionalism_score": 0.4,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "minjung_daily",
+      "followers": 195000,
+      "bio": "ootd",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 12300,
+          "views": 185000,
+          "comments": 534,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_004.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 11800,
+          "views": 172000,
+          "comments": 489,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_005.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 10900,
+          "views": 158000,
+          "comments": 445,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_006.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.82,
+        "US": 0.07,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "minimal",
+        "sub_styles": [
+          "clean",
+          "modern"
+        ],
+        "color_palette": "monochrome",
+        "aesthetic_tags": [
+          "미니멀",
+          "모노톤",
+          "시크",
+          "오피스룩",
+          "클린"
+        ],
+        "hair_style_tags": [
+          "단발",
+          "슬릭백",
+          "블랙헤어",
+          "볼륨매직"
+        ],
+        "vibe": "깔끔하고 세련된 미니멀 패션 인플루언서",
+        "professionalism_score": 0.5,
+        "trend_relevance_score": 0.88
+      }
+    },
+    {
+      "username": "yeonwoo_glam",
+      "followers": 340000,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 25600,
+          "views": 420000,
+          "comments": 1234,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_007.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 23100,
+          "views": 385000,
+          "comments": 1087,
+          "timestamp": "2024-12-19",
+          "thumbnail_url": "reels_thumb_008.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 21800,
+          "views": 356000,
+          "comments": 998,
+          "timestamp": "2024-12-17",
+          "thumbnail_url": "reels_thumb_009.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.1,
+        "JP": 0.08,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "warm_gold",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "파티룩",
+          "하이엔드",
+          "명품"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "애쉬브라운",
+          "볼륨컬",
+          "레이어드"
+        ],
+        "vibe": "고급스럽고 화려한 럭셔리 뷰티 인플루언서",
+        "professionalism_score": 0.55,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "salon_director_park",
+      "followers": 45000,
+      "bio": "강남 프리미엄 살롱 디렉터 | 발레아쥬 전문 | 해외 세미나 강사 | 예약 필수",
+      "recent_posts": [
+        {
+          "caption": "발레아쥬 시술의 정석! 자연스러운 그라데이션 만들기 #발레아쥬 #염색전문 #미용사",
+          "likes": 1800,
+          "views": 25000,
+          "comments": 67,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "이달의 염색약 레시피 - 애쉬브라운 조색 비율 공개 #염색레시피 #살롱",
+          "likes": 1650,
+          "views": 22000,
+          "comments": 58,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "고객님 두피 진단 후 맞춤 트리트먼트 시술 후기 #두피케어 #시술",
+          "likes": 1420,
+          "views": 19000,
+          "comments": 43,
+          "timestamp": "2024-12-14"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.95,
+        "US": 0.02,
+        "JP": 0.02,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 3.5
+    },
+    {
+      "username": "soyeon_natural",
+      "followers": 165000,
+      "bio": "",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9800,
+          "views": 145000,
+          "comments": 412,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_010.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 9200,
+          "views": 132000,
+          "comments": 378,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_011.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 8600,
+          "views": 125000,
+          "comments": 345,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_012.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.8,
+        "US": 0.08,
+        "JP": 0.07,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.2,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "soft",
+          "warm"
+        ],
+        "color_palette": "earth_tone",
+        "aesthetic_tags": [
+          "내추럴",
+          "친환경",
+          "힐링",
+          "여행",
+          "카페"
+        ],
+        "hair_style_tags": [
+          "자연웨이브",
+          "허쉬컷",
+          "베이지브라운",
+          "에어뱅"
+        ],
+        "vibe": "자연스럽고 편안한 감성의 라이프스타일 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.82
+      }
+    },
+    {
+      "username": "colorist_jiwon",
+      "followers": 68000,
+      "bio": "컬러리스트 자격증 보유 | 홍대 살롱 근무 | 펌&염색 시술 전문 | 예약문의",
+      "recent_posts": [
+        {
+          "caption": "블루블랙 염색 시술 과정! 탈색 없이 깊은 컬러 내기 #염색 #컬러리스트",
+          "likes": 2400,
+          "views": 35000,
+          "comments": 78,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "S컬 디지털펌 완벽 가이드! 열펌 vs 셋팅펌 차이 #펌전문 #미용사일상",
+          "likes": 2150,
+          "views": 31000,
+          "comments": 65,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "두피 타입별 샴푸 선택 가이드! 전문가가 알려드림 #헤어케어 #살롱추천",
+          "likes": 1980,
+          "views": 28000,
+          "comments": 54,
+          "timestamp": "2024-12-14"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.9,
+        "US": 0.04,
+        "JP": 0.03,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 3.0
+    },
+    {
+      "username": "jieun_aesthetic",
+      "followers": 225000,
+      "bio": "seoul",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 14500,
+          "views": 215000,
+          "comments": 623,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_013.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 13200,
+          "views": 198000,
+          "comments": 567,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_014.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 12800,
+          "views": 185000,
+          "comments": 534,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_015.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "playful",
+          "youthful"
+        ],
+        "color_palette": "pastel_pop",
+        "aesthetic_tags": [
+          "컬러풀",
+          "키치",
+          "Y2K",
+          "발랄",
+          "팝"
+        ],
+        "hair_style_tags": [
+          "핑크염색",
+          "하이라이트",
+          "투톤",
+          "볼륨펌"
+        ],
+        "vibe": "화려하고 개성있는 컬러풀 패션 인플루언서",
+        "professionalism_score": 0.3,
+        "trend_relevance_score": 0.94
+      }
+    },
+    {
+      "username": "trendy_hair_sohee",
+      "followers": 180000,
+      "bio": "트렌드세터 | 패션 & 헤어 | YouTube 구독자 50만 | 비즈니스 문의 bio",
+      "recent_posts": [
+        {
+          "caption": "2024 겨울 헤어 트렌드 총정리! 올해 핫한 스타일은? #헤어트렌드 #스타일링",
+          "likes": 8500,
+          "views": 125000,
+          "comments": 342,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "명품 헤어 도구 vs 저렴이 비교! 솔직 후기 #꿀팁 #추천",
+          "likes": 7200,
+          "views": 108000,
+          "comments": 287,
+          "timestamp": "2024-12-19"
+        },
+        {
+          "caption": "연말 파티룩에 어울리는 헤어스타일 5가지! #OOTD #파티룩",
+          "likes": 6800,
+          "views": 98000,
+          "comments": 256,
+          "timestamp": "2024-12-16"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.82,
+        "US": 0.08,
+        "JP": 0.06,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "modern",
+          "chic"
+        ],
+        "color_palette": "neutral_cool",
+        "aesthetic_tags": [
+          "트렌디",
+          "세련",
+          "모던",
+          "시크"
+        ],
+        "hair_style_tags": [
+          "레이어드",
+          "애쉬그레이",
+          "S컬펌"
+        ],
+        "vibe": "트렌드를 선도하는 스타일 크리에이터",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.93
+      }
+    },
+    {
+      "username": "premium_salon_lee",
+      "followers": 52000,
+      "bio": "압구정 프리미엄 헤어살롱 | 20년 경력 원장 | VIP 고객 전담 | 완전예약제",
+      "recent_posts": [
+        {
+          "caption": "럭셔리 살롱의 하루! 프리미엄 시술 과정 공개 #프리미엄살롱 #미용사",
+          "likes": 1900,
+          "views": 26000,
+          "comments": 52,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "고급 염색약 비교 분석! 프로가 추천하는 브랜드 #염색약레시피 #살롱",
+          "likes": 1750,
+          "views": 24000,
+          "comments": 48,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "손상모 집중 케어 프로그램 소개! 시술 전후 비교 #헤어클리닉 #시술",
+          "likes": 1600,
+          "views": 21000,
+          "comments": 41,
+          "timestamp": "2024-12-13"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 4.0
+    },
+    {
+      "username": "hyuna_chic",
+      "followers": 312000,
+      "bio": "",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 22400,
+          "views": 378000,
+          "comments": 1045,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_016.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 20100,
+          "views": 345000,
+          "comments": 923,
+          "timestamp": "2024-12-19",
+          "thumbnail_url": "reels_thumb_017.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 19500,
+          "views": 328000,
+          "comments": 889,
+          "timestamp": "2024-12-17",
+          "thumbnail_url": "reels_thumb_018.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.11,
+        "JP": 0.09,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "elegant",
+          "sophisticated"
+        ],
+        "color_palette": "black_gold",
+        "aesthetic_tags": [
+          "시크",
+          "럭셔리",
+          "도시적",
+          "세련",
+          "하이패션"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "다크브라운",
+          "글로시",
+          "센터파팅"
+        ],
+        "vibe": "도시적이고 세련된 하이엔드 패션 인플루언서",
+        "professionalism_score": 0.5,
+        "trend_relevance_score": 0.91
+      }
+    },
+    {
+      "username": "selfcare_beauty_jin",
+      "followers": 75000,
+      "bio": "홈케어 전문 뷰티 크리에이터 | 셀프 스타일링 팁 | 제품 리뷰어",
+      "recent_posts": [
+        {
+          "caption": "집에서 하는 셀프 염색 완벽 가이드! 초보도 OK #셀프염색 #홈케어",
+          "likes": 3100,
+          "views": 47000,
+          "comments": 124,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "드럭스토어 헤어템 TOP 10! 가성비 끝판왕 #추천템 #꿀팁",
+          "likes": 2800,
+          "views": 42000,
+          "comments": 108,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "고데기 없이 웨이브 만들기! 데일리 스타일링 #셀프스타일링 #데일리룩",
+          "likes": 2500,
+          "views": 38000,
+          "comments": 95,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.86,
+        "US": 0.06,
+        "JP": 0.04,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 2.3
+    },
+    {
+      "username": "daeun_mood",
+      "followers": 142000,
+      "bio": "daily mood",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 8200,
+          "views": 125000,
+          "comments": 356,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_019.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 7600,
+          "views": 112000,
+          "comments": 312,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_020.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 7100,
+          "views": 105000,
+          "comments": 289,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_021.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.79,
+        "US": 0.08,
+        "JP": 0.07,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "casual",
+          "street"
+        ],
+        "color_palette": "earth_neutral",
+        "aesthetic_tags": [
+          "데일리",
+          "캐주얼",
+          "빈티지",
+          "스트릿",
+          "레트로"
+        ],
+        "hair_style_tags": [
+          "중단발",
+          "허쉬컷",
+          "웜브라운",
+          "시스루뱅"
+        ],
+        "vibe": "편안하면서도 세련된 데일리 스타일 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "glam_hair_sua",
+      "followers": 145000,
+      "bio": "글래머러스 헤어 스타일 | 셀럽 담당 | 화보 촬영 | 비즈니스 문의",
+      "recent_posts": [
+        {
+          "caption": "연예인 레드카펫 헤어 따라하기! 글램 스타일링 #스타일링 #글램룩",
+          "likes": 6200,
+          "views": 92000,
+          "comments": 234,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "럭셔리 무드 헤어 연출법! 특별한 날 완벽하게 #OOTD #파티헤어",
+          "likes": 5800,
+          "views": 85000,
+          "comments": 198,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "내 피부톤에 맞는 헤어컬러 찾기! 퍼스널컬러 가이드 #꿀팁 #헤어컬러",
+          "likes": 5200,
+          "views": 78000,
+          "comments": 176,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.8,
+        "US": 0.09,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "warm_rich",
+        "aesthetic_tags": [
+          "글램",
+          "럭셔리",
+          "파티",
+          "화려"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "글로시",
+          "볼륨"
+        ],
+        "vibe": "화려하고 고급스러운 글램 스타일리스트",
+        "professionalism_score": 0.6,
+        "trend_relevance_score": 0.85
+      }
+    },
+    {
+      "username": "natural_hair_hana",
+      "followers": 62000,
+      "bio": "자연주의 헤어케어 | 비건 뷰티 | 친환경 제품 리뷰 | 건강한 머릿결",
+      "recent_posts": [
+        {
+          "caption": "비건 샴푸 TOP 5 추천! 두피에 순한 제품만 #비건뷰티 #홈케어",
+          "likes": 2600,
+          "views": 39000,
+          "comments": 87,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "천연 헤어팩 만들기! 집에서 DIY 트리트먼트 #셀프케어 #꿀팁",
+          "likes": 2300,
+          "views": 35000,
+          "comments": 76,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "손상 없이 염색하는 방법! 자연 유래 성분 #친환경 #헤어케어",
+          "likes": 2100,
+          "views": 32000,
+          "comments": 68,
+          "timestamp": "2024-12-14"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.87,
+        "US": 0.06,
+        "JP": 0.04,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 2.8
+    },
+    {
+      "username": "suzy_street",
+      "followers": 258000,
+      "bio": "street fashion",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 17200,
+          "views": 265000,
+          "comments": 734,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_022.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 15800,
+          "views": 242000,
+          "comments": 678,
+          "timestamp": "2024-12-19",
+          "thumbnail_url": "reels_thumb_023.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 14900,
+          "views": 228000,
+          "comments": 623,
+          "timestamp": "2024-12-17",
+          "thumbnail_url": "reels_thumb_024.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.74,
+        "US": 0.11,
+        "JP": 0.08,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "sporty"
+        ],
+        "color_palette": "bold_neutral",
+        "aesthetic_tags": [
+          "스트릿",
+          "스포티",
+          "오버사이즈",
+          "힙합",
+          "캡"
+        ],
+        "hair_style_tags": [
+          "포니테일",
+          "하이번",
+          "블랙",
+          "슬릭"
+        ],
+        "vibe": "힙하고 쿨한 스트릿 패션 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.96
+      }
+    },
+    {
+      "username": "celebrity_hair_pro",
+      "followers": 92000,
+      "bio": "셀럽 전담 헤어 아티스트 | 방송/화보 촬영 | 청담동 살롱 | 예약 필수",
+      "recent_posts": [
+        {
+          "caption": "오늘 촬영 현장! 드라마 주연 배우님 헤어 시술 #헤어아티스트 #미용사",
+          "likes": 3800,
+          "views": 55000,
+          "comments": 112,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "화보 촬영용 업스타일 시술 과정! 프로의 테크닉 #시술 #살롱",
+          "likes": 3500,
+          "views": 51000,
+          "comments": 98,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "신인 배우 데뷔 전 이미지 변신! Before & After #변신 #염색",
+          "likes": 3200,
+          "views": 47000,
+          "comments": 85,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.91,
+        "US": 0.04,
+        "JP": 0.03,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.9
+    },
+    {
+      "username": "yoona_soft",
+      "followers": 178000,
+      "bio": "",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 10500,
+          "views": 158000,
+          "comments": 445,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_025.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 9800,
+          "views": 145000,
+          "comments": 398,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_026.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 9200,
+          "views": 135000,
+          "comments": 367,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_027.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "romantic",
+          "feminine"
+        ],
+        "color_palette": "soft_pink",
+        "aesthetic_tags": [
+          "로맨틱",
+          "페미닌",
+          "소프트",
+          "청순",
+          "데이트룩"
+        ],
+        "hair_style_tags": [
+          "롱레이어",
+          "웨이브",
+          "밀크브라운",
+          "사이드뱅"
+        ],
+        "vibe": "청순하고 여성스러운 로맨틱 인플루언서",
+        "professionalism_score": 0.3,
+        "trend_relevance_score": 0.84
+      }
+    },
+    {
+      "username": "budget_beauty_tip",
+      "followers": 88000,
+      "bio": "가성비 뷰티 전문 | 저렴이 꿀템 발굴 | 솔직한 리뷰만 | 대학생 뷰티러",
+      "recent_posts": [
+        {
+          "caption": "만원 이하 헤어 제품 추천! 다이소템 포함 #가성비 #꿀팁 #추천",
+          "likes": 4500,
+          "views": 68000,
+          "comments": 178,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "셀프 뿌리염색 완벽 가이드! 미용실 안 가도 OK #셀프염색 #홈케어",
+          "likes": 4100,
+          "views": 62000,
+          "comments": 156,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "올리브영 세일 헤어템 쇼핑 리스트! #데일리룩 #스타일링",
+          "likes": 3800,
+          "views": 57000,
+          "comments": 142,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.05,
+        "JP": 0.03,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 2.2
+    },
+    {
+      "username": "hair_science_dr",
+      "followers": 35000,
+      "bio": "피부과 전문의 | 탈모 & 두피 전문 | 과학적 헤어케어 | 의학 정보 공유",
+      "recent_posts": [
+        {
+          "caption": "탈모 예방을 위한 올바른 샴푸법! 전문의가 알려드림 #두피케어 #전문가",
+          "likes": 1400,
+          "views": 21000,
+          "comments": 65,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "두피 타입 자가진단 방법! 지성/건성/민감성 구분 #헤어케어 #시술",
+          "likes": 1250,
+          "views": 18500,
+          "comments": 52,
+          "timestamp": "2024-12-16"
+        },
+        {
+          "caption": "염색약 성분 분석! 피해야 할 성분은? #염색약 #전문가조언",
+          "likes": 1100,
+          "views": 16000,
+          "comments": 48,
+          "timestamp": "2024-12-12"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 4.2
+    },
+    {
+      "username": "minji_vintage",
+      "followers": 198000,
+      "bio": "vintage lover",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 12800,
+          "views": 195000,
+          "comments": 534,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_028.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 11500,
+          "views": 178000,
+          "comments": 489,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_029.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 10800,
+          "views": 165000,
+          "comments": 445,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_030.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.1,
+        "JP": 0.08,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "vintage",
+          "retro"
+        ],
+        "color_palette": "muted_warm",
+        "aesthetic_tags": [
+          "빈티지",
+          "레트로",
+          "70년대",
+          "구제",
+          "필름"
+        ],
+        "hair_style_tags": [
+          "커튼뱅",
+          "미디엄레이어",
+          "카퍼브라운",
+          "내추럴웨이브"
+        ],
+        "vibe": "감성적인 빈티지 무드 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.89
+      }
+    },
+    {
+      "username": "k_style_hair",
+      "followers": 210000,
+      "bio": "K-Beauty 헤어 트렌드 | 해외 팬 환영 | Global Hair Trends | EN/KR",
+      "recent_posts": [
+        {
+          "caption": "K-POP 아이돌 헤어 따라하기! BTS 정국 스타일 #스타일링 #OOTD",
+          "likes": 12000,
+          "views": 180000,
+          "comments": 456,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "한국 미용실 vs 해외 미용실 차이점! #헤어트렌드 #꿀팁",
+          "likes": 10500,
+          "views": 158000,
+          "comments": 398,
+          "timestamp": "2024-12-19"
+        },
+        {
+          "caption": "Korean Hair Routine! 한국식 헤어케어 루틴 #홈케어 #추천",
+          "likes": 9800,
+          "views": 145000,
+          "comments": 367,
+          "timestamp": "2024-12-16"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.55,
+        "US": 0.18,
+        "JP": 0.12,
+        "OTHER": 0.15
+      },
+      "avg_upload_interval_days": 1.5
+    },
+    {
+      "username": "eunbi_classic",
+      "followers": 125000,
+      "bio": "classic style",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 7200,
+          "views": 108000,
+          "comments": 298,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_031.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 6800,
+          "views": 98000,
+          "comments": 267,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_032.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 6400,
+          "views": 92000,
+          "comments": 245,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_033.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.08,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.3,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "classic",
+          "timeless"
+        ],
+        "color_palette": "neutral_beige",
+        "aesthetic_tags": [
+          "클래식",
+          "타임리스",
+          "우아",
+          "정장",
+          "오피스"
+        ],
+        "hair_style_tags": [
+          "단정한웨이브",
+          "다크브라운",
+          "로우번",
+          "클래식"
+        ],
+        "vibe": "클래식하고 우아한 정통 스타일 인플루언서",
+        "professionalism_score": 0.55,
+        "trend_relevance_score": 0.78
+      }
+    },
+    {
+      "username": "organic_hair_mom",
+      "followers": 48000,
+      "bio": "육아맘의 헤어케어 일상 | 유기농 제품 추천 | 아이와 함께하는 뷰티",
+      "recent_posts": [
+        {
+          "caption": "아이와 함께 쓸 수 있는 저자극 샴푸 추천! #육아맘 #홈케어",
+          "likes": 1800,
+          "views": 27000,
+          "comments": 76,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "바쁜 엄마를 위한 5분 스타일링! 간편하게 예뻐지기 #스타일링 #꿀팁",
+          "likes": 1650,
+          "views": 24500,
+          "comments": 68,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "아이 머리 예쁘게 묶어주는 방법! #셀프스타일링 #육아",
+          "likes": 1500,
+          "views": 22000,
+          "comments": 58,
+          "timestamp": "2024-12-14"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.92,
+        "US": 0.04,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.1
+    },
+    {
+      "username": "seoyoung_minimal",
+      "followers": 155000,
+      "bio": "less is more",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9100,
+          "views": 138000,
+          "comments": 378,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_034.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 8500,
+          "views": 125000,
+          "comments": 345,
+          "timestamp": "2024-12-18",
+          "thumbnail_url": "reels_thumb_035.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 8000,
+          "views": 118000,
+          "comments": 312,
+          "timestamp": "2024-12-15",
+          "thumbnail_url": "reels_thumb_036.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.09,
+        "JP": 0.07,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "minimal",
+        "sub_styles": [
+          "clean",
+          "scandinavian"
+        ],
+        "color_palette": "white_beige",
+        "aesthetic_tags": [
+          "미니멀",
+          "심플",
+          "클린",
+          "무채색",
+          "북유럽"
+        ],
+        "hair_style_tags": [
+          "원랭스",
+          "내추럴블랙",
+          "슬릭",
+          "로우번"
+        ],
+        "vibe": "정제된 미니멀 라이프스타일 인플루언서",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.86
+      }
+    },
+    {
+      "username": "mens_hair_style",
+      "followers": 72000,
+      "bio": "남성 헤어 전문 | 바버샵 원장 | 남자 펌 & 컷 | 예약문의",
+      "recent_posts": [
+        {
+          "caption": "남자 투블럭 펌 시술 과정! 스타일 유지 꿀팁 #남자펌 #미용사",
+          "likes": 2800,
+          "views": 42000,
+          "comments": 89,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "남성 두피케어 필수템 추천! 탈모 예방 #두피케어 #살롱",
+          "likes": 2500,
+          "views": 38000,
+          "comments": 76,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "직장인 남성 헤어스타일 추천 TOP 5! #스타일링 #시술",
+          "likes": 2300,
+          "views": 35000,
+          "comments": 68,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.9,
+        "US": 0.05,
+        "JP": 0.03,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.7
+    },
+    {
+      "username": "luxury_hair_artist",
+      "followers": 58000,
+      "bio": "하이엔드 헤어 아티스트 | 청담/압구정 활동 | 프리미엄 시술 | 예약제",
+      "recent_posts": [
+        {
+          "caption": "VIP 고객님 웨딩 헤어 시술! 특별한 날을 위한 완벽한 준비 #웨딩헤어 #미용사",
+          "likes": 2200,
+          "views": 32000,
+          "comments": 65,
+          "timestamp": "2024-12-20"
+        },
+        {
+          "caption": "프리미엄 살롱의 특별한 서비스! 1:1 맞춤 컨설팅 #럭셔리살롱 #시술",
+          "likes": 2000,
+          "views": 29000,
+          "comments": 58,
+          "timestamp": "2024-12-17"
+        },
+        {
+          "caption": "해외 명품 헤어 제품 리뷰! 전문가 추천템 #염색약 #프리미엄",
+          "likes": 1850,
+          "views": 26500,
+          "comments": 52,
+          "timestamp": "2024-12-14"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.3
+    },
+    {
+      "username": "nayeon_edge",
+      "followers": 235000,
+      "bio": "edge & bold",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 15800,
+          "views": 245000,
+          "comments": 678,
+          "timestamp": "2024-12-21",
+          "thumbnail_url": "reels_thumb_037.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 14200,
+          "views": 218000,
+          "comments": 612,
+          "timestamp": "2024-12-19",
+          "thumbnail_url": "reels_thumb_038.jpg"
+        },
+        {
+          "caption": "",
+          "likes": 13500,
+          "views": 205000,
+          "comments": 578,
+          "timestamp": "2024-12-17",
+          "thumbnail_url": "reels_thumb_039.jpg"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.12,
+        "JP": 0.09,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "edgy",
+          "bold"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "언더그라운드",
+          "펑크",
+          "아방가르드"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "언더컷",
+          "비비드컬러",
+          "투톤",
+          "픽시"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.3,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "miyeon_pure",
+      "followers": 364461,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 14317,
+          "views": 193276,
+          "comments": 503,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 13340,
+          "views": 197554,
+          "comments": 700,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 12125,
+          "views": 164607,
+          "comments": 348,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.09,
+        "JP": 0.05,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "y2k",
+          "retro"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.34,
+        "trend_relevance_score": 0.86
+      }
+    },
+    {
+      "username": "sullyoon_glow",
+      "followers": 321357,
+      "bio": "graceful living",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 25785,
+          "views": 353368,
+          "comments": 1252,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 23101,
+          "views": 360324,
+          "comments": 892,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 21702,
+          "views": 362124,
+          "comments": 1139,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.12,
+        "JP": 0.1,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "artistic",
+          "creative"
+        ],
+        "color_palette": "vivid",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.38,
+        "trend_relevance_score": 0.97
+      }
+    },
+    {
+      "username": "ahyeon_glow",
+      "followers": 376332,
+      "bio": "glow up ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 16592,
+          "views": 297774,
+          "comments": 720,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 15134,
+          "views": 249713,
+          "comments": 749,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 14299,
+          "views": 200697,
+          "comments": 524,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.69,
+        "US": 0.1,
+        "JP": 0.06,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.2,
+      "image_analysis": {
+        "dominant_style": "minimal",
+        "sub_styles": [
+          "scandinavian",
+          "pure"
+        ],
+        "color_palette": "neutral",
+        "aesthetic_tags": [
+          "미니멀",
+          "심플",
+          "클린",
+          "모던",
+          "어반"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.49,
+        "trend_relevance_score": 0.84
+      }
+    },
+    {
+      "username": "sullyoon_style",
+      "followers": 88373,
+      "bio": "fashion | daily",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 6003,
+          "views": 84724,
+          "comments": 231,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 5144,
+          "views": 74410,
+          "comments": 240,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 4788,
+          "views": 60021,
+          "comments": 123,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.74,
+        "US": 0.12,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "black_gold",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "하이엔드",
+          "명품",
+          "세련"
+        ],
+        "hair_style_tags": [
+          "블랙",
+          "다크브라운"
+        ],
+        "vibe": "힙하고 트렌디한 MZ세대 패션 인플루언서",
+        "professionalism_score": 0.5,
+        "trend_relevance_score": 0.85
+      }
+    },
+    {
+      "username": "tzuyu_glow",
+      "followers": 112712,
+      "bio": "bohemian soul 🌻",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 5661,
+          "views": 64328,
+          "comments": 262,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 4452,
+          "views": 68183,
+          "comments": 177,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 4554,
+          "views": 72078,
+          "comments": 220,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.08,
+        "JP": 0.05,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "pearl_white",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "감성적인 빈티지 무드 인플루언서",
+        "professionalism_score": 0.44,
+        "trend_relevance_score": 0.93
+      }
+    },
+    {
+      "username": "yeji_vibes",
+      "followers": 260820,
+      "bio": "elegance ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 15369,
+          "views": 226613,
+          "comments": 650,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 14082,
+          "views": 236956,
+          "comments": 612,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 13184,
+          "views": 197577,
+          "comments": 515,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.08,
+        "JP": 0.1,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "cool",
+          "hip"
+        ],
+        "color_palette": "cool_neutral",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "도시적이고 세련된 어반 시크 인플루언서",
+        "professionalism_score": 0.44,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "dahyun_pure",
+      "followers": 345491,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 18778,
+          "views": 324438,
+          "comments": 793,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 17302,
+          "views": 254823,
+          "comments": 857,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 16187,
+          "views": 284492,
+          "comments": 680,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.13,
+        "JP": 0.09,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "edgy"
+        ],
+        "color_palette": "bold_mix",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "자연스럽고 편안한 라이프스타일 인플루언서",
+        "professionalism_score": 0.41,
+        "trend_relevance_score": 0.83
+      }
+    },
+    {
+      "username": "somi_vibes",
+      "followers": 371054,
+      "bio": "☀️ sunshine vibes",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 20971,
+          "views": 348739,
+          "comments": 946,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 19700,
+          "views": 252435,
+          "comments": 970,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 17980,
+          "views": 222572,
+          "comments": 986,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.09,
+        "JP": 0.09,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "bohemian",
+          "earthy"
+        ],
+        "color_palette": "dusty_rose",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "최신 트렌드를 선도하는 스타일 크리에이터",
+        "professionalism_score": 0.43,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "jisoo_aesthetic",
+      "followers": 234192,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9127,
+          "views": 138274,
+          "comments": 384,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8829,
+          "views": 148747,
+          "comments": 403,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 7831,
+          "views": 119593,
+          "comments": 277,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.12,
+        "JP": 0.05,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "y2k",
+          "retro"
+        ],
+        "color_palette": "neon_pop",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "단발",
+          "보브컷",
+          "시스루뱅"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.39,
+        "trend_relevance_score": 0.91
+      }
+    },
+    {
+      "username": "chaeyoung_glow",
+      "followers": 160640,
+      "bio": "☀️ sunshine vibes",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9248,
+          "views": 134135,
+          "comments": 286,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8367,
+          "views": 134795,
+          "comments": 450,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 7432,
+          "views": 111036,
+          "comments": 225,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.13,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "dusty_rose",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "감성적인 빈티지 무드 인플루언서",
+        "professionalism_score": 0.42,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "irene_daily",
+      "followers": 428952,
+      "bio": "fresh & clean 🍃",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 25581,
+          "views": 445016,
+          "comments": 1482,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 23314,
+          "views": 295630,
+          "comments": 1100,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 21519,
+          "views": 309007,
+          "comments": 1083,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.11,
+        "JP": 0.06,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "earth_tone",
+        "aesthetic_tags": [
+          "보헤미안",
+          "따뜻함",
+          "편안함"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "레이어드",
+          "볼륨컬"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.33,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "wendy_pure",
+      "followers": 405948,
+      "bio": "bold & beautiful",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 32119,
+          "views": 396838,
+          "comments": 1246,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 29467,
+          "views": 388435,
+          "comments": 1305,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 27017,
+          "views": 385686,
+          "comments": 1556,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.12,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "edgy"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "자연스럽고 편안한 라이프스타일 인플루언서",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "arin_look",
+      "followers": 298662,
+      "bio": "graceful living",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 15827,
+          "views": 246260,
+          "comments": 875,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 13874,
+          "views": 245172,
+          "comments": 630,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 12973,
+          "views": 212404,
+          "comments": 340,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.13,
+        "JP": 0.06,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "soft",
+          "warm"
+        ],
+        "color_palette": "warm_beige",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "애쉬브라운",
+          "밀크브라운",
+          "초코브라운"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.37,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "haerin_warm",
+      "followers": 445154,
+      "bio": "dreamy 🌙",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 33213,
+          "views": 434529,
+          "comments": 1152,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 30105,
+          "views": 423758,
+          "comments": 1129,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 27876,
+          "views": 340627,
+          "comments": 920,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.69,
+        "US": 0.1,
+        "JP": 0.09,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "cream_brown",
+        "aesthetic_tags": [
+          "보헤미안",
+          "따뜻함",
+          "편안함"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "화려하고 글래머러스한 뷰티 인플루언서",
+        "professionalism_score": 0.42,
+        "trend_relevance_score": 0.96
+      }
+    },
+    {
+      "username": "jiyoung_style",
+      "followers": 404647,
+      "bio": "dreamy 🌙",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 29844,
+          "views": 431065,
+          "comments": 1354,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 26859,
+          "views": 414875,
+          "comments": 1364,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 25323,
+          "views": 370013,
+          "comments": 723,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.12,
+        "JP": 0.05,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "soft",
+          "warm"
+        ],
+        "color_palette": "soft_pink",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.85
+      }
+    },
+    {
+      "username": "lisa_pure",
+      "followers": 179993,
+      "bio": "elegance ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 11517,
+          "views": 150710,
+          "comments": 536,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 10053,
+          "views": 177472,
+          "comments": 538,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 9727,
+          "views": 135113,
+          "comments": 560,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.13,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "edgy"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "도시적이고 세련된 어반 시크 인플루언서",
+        "professionalism_score": 0.42,
+        "trend_relevance_score": 0.84
+      }
+    },
+    {
+      "username": "yeri_cool",
+      "followers": 342146,
+      "bio": "urban lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 15025,
+          "views": 269915,
+          "comments": 558,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 13826,
+          "views": 201336,
+          "comments": 745,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 12767,
+          "views": 197411,
+          "comments": 586,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.13,
+        "JP": 0.06,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "artistic",
+          "creative"
+        ],
+        "color_palette": "pastel_pop",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.34,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "somi_fresh",
+      "followers": 210867,
+      "bio": "romantic mood 🌹",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 16264,
+          "views": 231488,
+          "comments": 579,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 14652,
+          "views": 219921,
+          "comments": 687,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 13472,
+          "views": 201302,
+          "comments": 562,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.13,
+        "JP": 0.1,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "soft",
+          "warm"
+        ],
+        "color_palette": "cream_brown",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "몽환적이고 신비로운 드리미 감성 인플루언서",
+        "professionalism_score": 0.52,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "seulgi_dream95",
+      "followers": 209036,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9270,
+          "views": 142159,
+          "comments": 307,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8539,
+          "views": 112069,
+          "comments": 347,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 8138,
+          "views": 99439,
+          "comments": 371,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "vibrant",
+          "playful"
+        ],
+        "color_palette": "rainbow",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "레이어드",
+          "볼륨컬"
+        ],
+        "vibe": "자연스럽고 편안한 라이프스타일 인플루언서",
+        "professionalism_score": 0.34,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "arin_warm",
+      "followers": 82484,
+      "bio": "graceful living",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 4461,
+          "views": 48672,
+          "comments": 177,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 4020,
+          "views": 55053,
+          "comments": 141,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 3591,
+          "views": 46651,
+          "comments": 112,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.13,
+        "JP": 0.06,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "vibrant",
+          "playful"
+        ],
+        "color_palette": "vivid",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "레이어드",
+          "볼륨컬"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.41,
+        "trend_relevance_score": 0.93
+      }
+    },
+    {
+      "username": "nayeon_mood",
+      "followers": 410077,
+      "bio": "bold & beautiful",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 20193,
+          "views": 325200,
+          "comments": 1116,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 19012,
+          "views": 286993,
+          "comments": 888,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 17405,
+          "views": 251805,
+          "comments": 658,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.11,
+        "JP": 0.06,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "haute",
+          "chic"
+        ],
+        "color_palette": "rose_gold",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "애쉬브라운",
+          "밀크브라운",
+          "초코브라운"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.46,
+        "trend_relevance_score": 0.86
+      }
+    },
+    {
+      "username": "sullyoon_spark",
+      "followers": 324281,
+      "bio": "cool & effortless",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 19282,
+          "views": 236443,
+          "comments": 1068,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 17968,
+          "views": 239385,
+          "comments": 952,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 16384,
+          "views": 284035,
+          "comments": 850,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.1,
+        "JP": 0.07,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "sophisticated",
+          "refined"
+        ],
+        "color_palette": "burgundy",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "몽환적이고 신비로운 드리미 감성 인플루언서",
+        "professionalism_score": 0.51,
+        "trend_relevance_score": 0.96
+      }
+    },
+    {
+      "username": "seulgi_soft",
+      "followers": 258169,
+      "bio": "daily styling 💕",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 19509,
+          "views": 286226,
+          "comments": 958,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 17962,
+          "views": 300791,
+          "comments": 780,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 16096,
+          "views": 279415,
+          "comments": 436,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.13,
+        "JP": 0.07,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 2.2,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "pop",
+          "fun"
+        ],
+        "color_palette": "pastel_pop",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.42,
+        "trend_relevance_score": 0.85
+      }
+    },
+    {
+      "username": "jiyoung_glam",
+      "followers": 164104,
+      "bio": "timeless beauty",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9979,
+          "views": 161796,
+          "comments": 330,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 9504,
+          "views": 128197,
+          "comments": 496,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 8574,
+          "views": 148858,
+          "comments": 395,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.12,
+        "JP": 0.07,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "edgy"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "당당하고 자신감 넘치는 패션 인플루언서",
+        "professionalism_score": 0.46,
+        "trend_relevance_score": 0.97
+      }
+    },
+    {
+      "username": "nayeon_warm",
+      "followers": 335586,
+      "bio": "romantic mood 🌹",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 14588,
+          "views": 257245,
+          "comments": 543,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 13255,
+          "views": 200578,
+          "comments": 586,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 12760,
+          "views": 207830,
+          "comments": 673,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.71,
+        "US": 0.09,
+        "JP": 0.07,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "sophisticated",
+          "refined"
+        ],
+        "color_palette": "black_gold",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "몽환적이고 신비로운 드리미 감성 인플루언서",
+        "professionalism_score": 0.34,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "wendy_chic",
+      "followers": 270895,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 13270,
+          "views": 189198,
+          "comments": 517,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 12082,
+          "views": 196470,
+          "comments": 498,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 11519,
+          "views": 139821,
+          "comments": 356,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.71,
+        "US": 0.1,
+        "JP": 0.09,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "vibrant",
+          "playful"
+        ],
+        "color_palette": "rainbow",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "힙하고 트렌디한 MZ세대 패션 인플루언서",
+        "professionalism_score": 0.47,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "yeri_daily",
+      "followers": 111617,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 5193,
+          "views": 60979,
+          "comments": 144,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 4135,
+          "views": 67802,
+          "comments": 228,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 4301,
+          "views": 58623,
+          "comments": 162,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.09,
+        "JP": 0.07,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "sophisticated",
+          "refined"
+        ],
+        "color_palette": "burgundy",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "하이엔드",
+          "명품",
+          "세련"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.53,
+        "trend_relevance_score": 0.89
+      }
+    },
+    {
+      "username": "chaeyoung_glam",
+      "followers": 89575,
+      "bio": "iconic style 🖤",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 6555,
+          "views": 108887,
+          "comments": 315,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 5800,
+          "views": 84691,
+          "comments": 313,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 5635,
+          "views": 97518,
+          "comments": 296,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.74,
+        "US": 0.14,
+        "JP": 0.06,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "sophisticated",
+          "refined"
+        ],
+        "color_palette": "champagne_gold",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.84
+      }
+    },
+    {
+      "username": "lisa_bloom",
+      "followers": 303785,
+      "bio": "dreamy 🌙",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 13330,
+          "views": 169036,
+          "comments": 701,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 11822,
+          "views": 194212,
+          "comments": 598,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 10948,
+          "views": 189069,
+          "comments": 612,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.79,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.2,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "bold",
+          "modern"
+        ],
+        "color_palette": "cool_neutral",
+        "aesthetic_tags": [
+          "트렌디",
+          "Y2K",
+          "스트릿",
+          "힙",
+          "모던"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "자연스럽고 편안한 라이프스타일 인플루언서",
+        "professionalism_score": 0.41,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "jennie_glam",
+      "followers": 112999,
+      "bio": "fashion | daily",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 7840,
+          "views": 129218,
+          "comments": 333,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 7192,
+          "views": 89526,
+          "comments": 316,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 6803,
+          "views": 89787,
+          "comments": 191,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.71,
+        "US": 0.13,
+        "JP": 0.1,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "minimal",
+        "sub_styles": [
+          "urban",
+          "modern"
+        ],
+        "color_palette": "monochrome",
+        "aesthetic_tags": [
+          "시크",
+          "정제",
+          "단정"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.37,
+        "trend_relevance_score": 0.96
+      }
+    },
+    {
+      "username": "jisoo_glam",
+      "followers": 194374,
+      "bio": "☀️ sunshine vibes",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9367,
+          "views": 158758,
+          "comments": 403,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8740,
+          "views": 116587,
+          "comments": 371,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 8626,
+          "views": 111072,
+          "comments": 300,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.14,
+        "JP": 0.05,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "romantic",
+          "feminine"
+        ],
+        "color_palette": "earth_tone",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "블랙",
+          "다크브라운"
+        ],
+        "vibe": "당당하고 자신감 넘치는 패션 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "yeji_dream",
+      "followers": 446865,
+      "bio": "iconic style 🖤",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 31297,
+          "views": 421411,
+          "comments": 1687,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 28875,
+          "views": 414252,
+          "comments": 1261,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 26962,
+          "views": 340232,
+          "comments": 1142,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.71,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "artistic",
+          "creative"
+        ],
+        "color_palette": "vivid",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "최신 트렌드를 선도하는 스타일 크리에이터",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "sullyoon_look",
+      "followers": 304969,
+      "bio": "bohemian soul 🌻",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 17910,
+          "views": 250002,
+          "comments": 746,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 16580,
+          "views": 228018,
+          "comments": 683,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 15047,
+          "views": 259964,
+          "comments": 568,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.8,
+        "US": 0.13,
+        "JP": 0.1,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "artistic",
+          "creative"
+        ],
+        "color_palette": "rainbow",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "블랙",
+          "다크브라운"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.33,
+        "trend_relevance_score": 0.94
+      }
+    },
+    {
+      "username": "jisoo_vibes",
+      "followers": 248173,
+      "bio": "pure beauty 🤍",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 19252,
+          "views": 306149,
+          "comments": 866,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 18035,
+          "views": 283041,
+          "comments": 692,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 16276,
+          "views": 264478,
+          "comments": 499,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.11,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "pop",
+          "fun"
+        ],
+        "color_palette": "pastel_pop",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "활기차고 밝은 에너지의 비타민 인플루언서",
+        "professionalism_score": 0.33,
+        "trend_relevance_score": 0.82
+      }
+    },
+    {
+      "username": "lisa_daily",
+      "followers": 103092,
+      "bio": "urban lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 7704,
+          "views": 123863,
+          "comments": 423,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 7203,
+          "views": 106713,
+          "comments": 390,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 6533,
+          "views": 105743,
+          "comments": 315,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.73,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "romantic",
+          "feminine"
+        ],
+        "color_palette": "dusty_rose",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.45,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "somi_look",
+      "followers": 82070,
+      "bio": "ootd",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 5621,
+          "views": 91388,
+          "comments": 284,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 4952,
+          "views": 67768,
+          "comments": 207,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 4605,
+          "views": 53533,
+          "comments": 257,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.13,
+        "JP": 0.06,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 1.6,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "street",
+          "edgy"
+        ],
+        "color_palette": "high_contrast",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "블랙",
+          "다크브라운"
+        ],
+        "vibe": "도시적이고 세련된 어반 시크 인플루언서",
+        "professionalism_score": 0.54,
+        "trend_relevance_score": 0.88
+      }
+    },
+    {
+      "username": "yeri_fresh",
+      "followers": 282016,
+      "bio": "fresh & clean 🍃",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 13048,
+          "views": 170387,
+          "comments": 418,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 12272,
+          "views": 174502,
+          "comments": 570,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 10845,
+          "views": 192276,
+          "comments": 583,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.1,
+        "JP": 0.09,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "dusty_rose",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.84
+      }
+    },
+    {
+      "username": "lisa_cool",
+      "followers": 209010,
+      "bio": "☀️ sunshine vibes",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9640,
+          "views": 150877,
+          "comments": 414,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8290,
+          "views": 110553,
+          "comments": 320,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 7857,
+          "views": 110989,
+          "comments": 238,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.1,
+        "JP": 0.1,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "trendy",
+        "sub_styles": [
+          "cool",
+          "hip"
+        ],
+        "color_palette": "earth_neutral",
+        "aesthetic_tags": [
+          "엣지",
+          "볼드",
+          "쿨",
+          "캐주얼"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "화려하고 글래머러스한 뷰티 인플루언서",
+        "professionalism_score": 0.4,
+        "trend_relevance_score": 0.92
+      }
+    },
+    {
+      "username": "jennie_glow",
+      "followers": 257513,
+      "bio": "soft glam ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 18389,
+          "views": 220991,
+          "comments": 700,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 16521,
+          "views": 258475,
+          "comments": 755,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 15040,
+          "views": 229177,
+          "comments": 699,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.69,
+        "US": 0.13,
+        "JP": 0.07,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "haute",
+          "chic"
+        ],
+        "color_palette": "rose_gold",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "하이엔드",
+          "명품",
+          "세련"
+        ],
+        "hair_style_tags": [
+          "허쉬컷",
+          "에어뱅",
+          "레이어드"
+        ],
+        "vibe": "몽환적이고 신비로운 드리미 감성 인플루언서",
+        "professionalism_score": 0.33,
+        "trend_relevance_score": 0.85
+      }
+    },
+    {
+      "username": "jihyo_shine55",
+      "followers": 169874,
+      "bio": "☀️ sunshine vibes",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 7233,
+          "views": 119435,
+          "comments": 361,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 6746,
+          "views": 94521,
+          "comments": 341,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 6444,
+          "views": 112601,
+          "comments": 233,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.12,
+        "JP": 0.09,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 2.2,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "sophisticated",
+          "refined"
+        ],
+        "color_palette": "champagne_gold",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "하이엔드",
+          "명품",
+          "세련"
+        ],
+        "hair_style_tags": [
+          "롱스트레이트",
+          "글로시",
+          "윤기"
+        ],
+        "vibe": "최신 트렌드를 선도하는 스타일 크리에이터",
+        "professionalism_score": 0.52,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "nayeon_aesthetic",
+      "followers": 184029,
+      "bio": "fresh & clean 🍃",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 9350,
+          "views": 142682,
+          "comments": 387,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 8707,
+          "views": 118554,
+          "comments": 450,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 8245,
+          "views": 107603,
+          "comments": 332,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.75,
+        "US": 0.13,
+        "JP": 0.08,
+        "OTHER": 0.07
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "warm_beige",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.42,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "wonyoung_glam",
+      "followers": 213792,
+      "bio": "soft glam ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 11093,
+          "views": 156186,
+          "comments": 688,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 10199,
+          "views": 142707,
+          "comments": 385,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 9830,
+          "views": 147260,
+          "comments": 260,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.09,
+        "JP": 0.07,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "pop",
+          "fun"
+        ],
+        "color_palette": "rainbow",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "핑크브라운",
+          "로즈골드",
+          "카퍼"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.35,
+        "trend_relevance_score": 0.91
+      }
+    },
+    {
+      "username": "jihyo_fresh74",
+      "followers": 441403,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 18667,
+          "views": 329780,
+          "comments": 633,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 17243,
+          "views": 273068,
+          "comments": 722,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 15831,
+          "views": 248244,
+          "comments": 622,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.12,
+        "JP": 0.07,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.7,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "romantic",
+          "feminine"
+        ],
+        "color_palette": "warm_beige",
+        "aesthetic_tags": [
+          "보헤미안",
+          "따뜻함",
+          "편안함"
+        ],
+        "hair_style_tags": [
+          "애쉬그레이",
+          "실버"
+        ],
+        "vibe": "화려하고 글래머러스한 뷰티 인플루언서",
+        "professionalism_score": 0.38,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "yeri_hair",
+      "followers": 159427,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 8174,
+          "views": 142464,
+          "comments": 458,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 7521,
+          "views": 118011,
+          "comments": 304,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 7213,
+          "views": 102246,
+          "comments": 282,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.79,
+        "US": 0.13,
+        "JP": 0.06,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 2.0,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "black_gold",
+        "aesthetic_tags": [
+          "우아",
+          "엘레강스",
+          "시크",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "애쉬브라운",
+          "밀크브라운",
+          "초코브라운"
+        ],
+        "vibe": "힙하고 트렌디한 MZ세대 패션 인플루언서",
+        "professionalism_score": 0.49,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "jennie_beauty",
+      "followers": 176605,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 13424,
+          "views": 164269,
+          "comments": 498,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 12113,
+          "views": 215133,
+          "comments": 427,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 11692,
+          "views": 174313,
+          "comments": 287,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.78,
+        "US": 0.09,
+        "JP": 0.07,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "minimal",
+        "sub_styles": [
+          "urban",
+          "modern"
+        ],
+        "color_palette": "monochrome",
+        "aesthetic_tags": [
+          "미니멀",
+          "심플",
+          "클린",
+          "모던",
+          "어반"
+        ],
+        "hair_style_tags": [
+          "블랙",
+          "다크브라운"
+        ],
+        "vibe": "최신 트렌드를 선도하는 스타일 크리에이터",
+        "professionalism_score": 0.5,
+        "trend_relevance_score": 0.93
+      }
+    },
+    {
+      "username": "ningning_glam",
+      "followers": 365811,
+      "bio": "timeless beauty",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 26033,
+          "views": 445802,
+          "comments": 886,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 24077,
+          "views": 358341,
+          "comments": 1069,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 22466,
+          "views": 309854,
+          "comments": 945,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.81,
+        "US": 0.14,
+        "JP": 0.06,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.5,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "pop",
+          "fun"
+        ],
+        "color_palette": "vivid",
+        "aesthetic_tags": [
+          "컬러풀",
+          "비비드",
+          "팝",
+          "개성",
+          "키치"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "감성적인 빈티지 무드 인플루언서",
+        "professionalism_score": 0.53,
+        "trend_relevance_score": 0.95
+      }
+    },
+    {
+      "username": "hanni_mood",
+      "followers": 85193,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 4934,
+          "views": 61416,
+          "comments": 191,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 4844,
+          "views": 57538,
+          "comments": 168,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 4270,
+          "views": 70802,
+          "comments": 160,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.8,
+        "US": 0.13,
+        "JP": 0.08,
+        "OTHER": 0.05
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "natural",
+        "sub_styles": [
+          "dreamy",
+          "ethereal"
+        ],
+        "color_palette": "dusty_rose",
+        "aesthetic_tags": [
+          "내추럴",
+          "로맨틱",
+          "페미닌",
+          "청순",
+          "힐링"
+        ],
+        "hair_style_tags": [
+          "애쉬그레이",
+          "실버"
+        ],
+        "vibe": "쿨하고 에포트리스한 스타일 인플루언서",
+        "professionalism_score": 0.37,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "haerin_daily",
+      "followers": 329337,
+      "bio": "beauty & lifestyle",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 17392,
+          "views": 246207,
+          "comments": 952,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 16344,
+          "views": 234484,
+          "comments": 533,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 14735,
+          "views": 181721,
+          "comments": 816,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.77,
+        "US": 0.09,
+        "JP": 0.08,
+        "OTHER": 0.04
+      },
+      "avg_upload_interval_days": 1.9,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "elegant"
+        ],
+        "color_palette": "pearl_white",
+        "aesthetic_tags": [
+          "럭셔리",
+          "글램",
+          "하이엔드",
+          "명품",
+          "세련"
+        ],
+        "hair_style_tags": [
+          "미디엄레이어",
+          "C컬",
+          "내추럴웨이브"
+        ],
+        "vibe": "화려하고 글래머러스한 뷰티 인플루언서",
+        "professionalism_score": 0.31,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "eunchae_aesthetic",
+      "followers": 226434,
+      "bio": "modern aesthetic",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 11288,
+          "views": 199729,
+          "comments": 345,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 10363,
+          "views": 127887,
+          "comments": 423,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 9551,
+          "views": 134443,
+          "comments": 506,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.72,
+        "US": 0.11,
+        "JP": 0.09,
+        "OTHER": 0.08
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "pop",
+          "fun"
+        ],
+        "color_palette": "artistic_mix",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "레이어드",
+          "볼륨컬"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.41,
+        "trend_relevance_score": 0.87
+      }
+    },
+    {
+      "username": "minnie_hair",
+      "followers": 432397,
+      "bio": "dreamy 🌙",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 30655,
+          "views": 397924,
+          "comments": 1086,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 27803,
+          "views": 441882,
+          "comments": 1030,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 25910,
+          "views": 458749,
+          "comments": 1320,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.79,
+        "US": 0.1,
+        "JP": 0.08,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 2.1,
+      "image_analysis": {
+        "dominant_style": "colorful",
+        "sub_styles": [
+          "artistic",
+          "creative"
+        ],
+        "color_palette": "rainbow",
+        "aesthetic_tags": [
+          "발랄",
+          "에너지",
+          "창의적"
+        ],
+        "hair_style_tags": [
+          "숏컷",
+          "픽시",
+          "텍스처"
+        ],
+        "vibe": "대담하고 개성있는 엣지 스타일 인플루언서",
+        "professionalism_score": 0.44,
+        "trend_relevance_score": 0.9
+      }
+    },
+    {
+      "username": "salon_pro_lee",
+      "followers": 29078,
+      "bio": "하이엔드 헤어 아티스트 | 청담/압구정 활동 | 프리미엄 시술",
+      "recent_posts": [
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #시술 #살롱",
+          "likes": 743,
+          "views": 12651,
+          "comments": 33,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "컬러체인지 시술 과정 A to Z! #두피케어 #살롱",
+          "likes": 714,
+          "views": 10021,
+          "comments": 30,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "손상모복구 시술 과정 A to Z! #시술 #두피케어",
+          "likes": 590,
+          "views": 9944,
+          "comments": 30,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.7
+    },
+    {
+      "username": "color_expert_han",
+      "followers": 31882,
+      "bio": "펌 전문 디자이너 | S컬/C컬/히피펌 | 16년 경력",
+      "recent_posts": [
+        {
+          "caption": "S컬펌 시술 과정 A to Z! #살롱 #전문가",
+          "likes": 1482,
+          "views": 19824,
+          "comments": 57,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 과정 A to Z! #두피케어 #두피케어",
+          "likes": 1028,
+          "views": 14887,
+          "comments": 33,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #살롱 #미용사",
+          "likes": 963,
+          "views": 14626,
+          "comments": 51,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.04,
+        "JP": 0.02,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 3.6
+    },
+    {
+      "username": "hair_master_kang",
+      "followers": 62238,
+      "bio": "하이엔드 헤어 아티스트 | 청담/압구정 활동 | 프리미엄 시술",
+      "recent_posts": [
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #펌 #미용사",
+          "likes": 2735,
+          "views": 32740,
+          "comments": 90,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #시술 #펌",
+          "likes": 2357,
+          "views": 29451,
+          "comments": 69,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #시술 #미용사",
+          "likes": 2132,
+          "views": 31137,
+          "comments": 97,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.9
+    },
+    {
+      "username": "stylist_kim",
+      "followers": 32125,
+      "bio": "펌 전문 디자이너 | S컬/C컬/히피펌 | 18년 경력",
+      "recent_posts": [
+        {
+          "caption": "발레아쥬 시술 과정 A to Z! #펌 #염색",
+          "likes": 1048,
+          "views": 13267,
+          "comments": 45,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #두피케어 #미용사",
+          "likes": 925,
+          "views": 12917,
+          "comments": 32,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #미용사 #살롱",
+          "likes": 799,
+          "views": 15096,
+          "comments": 33,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.9,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 3.0
+    },
+    {
+      "username": "curl_master_han",
+      "followers": 86330,
+      "bio": "청담동 헤어살롱 원장 | 13년차 미용사 | 염색 & 펌 전문",
+      "recent_posts": [
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #미용사 #살롱",
+          "likes": 2503,
+          "views": 31949,
+          "comments": 125,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "컬러체인지 시술 완벽 가이드! 전문가 노하우 공개 #살롱 #펌",
+          "likes": 2316,
+          "views": 30269,
+          "comments": 58,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #살롱 #미용사",
+          "likes": 2261,
+          "views": 32070,
+          "comments": 64,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.05,
+        "JP": 0.03,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.5
+    },
+    {
+      "username": "cut_pro_oh",
+      "followers": 37693,
+      "bio": "청담동 헤어살롱 원장 | 13년차 미용사 | 염색 & 펌 전문",
+      "recent_posts": [
+        {
+          "caption": "S컬펌 시술 과정 A to Z! #시술 #두피케어",
+          "likes": 1636,
+          "views": 24081,
+          "comments": 61,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #미용사 #미용사",
+          "likes": 1450,
+          "views": 22656,
+          "comments": 64,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "손상모복구 시술 완벽 가이드! 전문가 노하우 공개 #살롱 #살롱",
+          "likes": 1366,
+          "views": 16796,
+          "comments": 63,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.03,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 2.6
+    },
+    {
+      "username": "color_expert_kim",
+      "followers": 52974,
+      "bio": "펌 전문 디자이너 | S컬/C컬/히피펌 | 9년 경력",
+      "recent_posts": [
+        {
+          "caption": "두피케어 시술 과정 A to Z! #전문가 #살롱",
+          "likes": 1852,
+          "views": 21807,
+          "comments": 77,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 과정 A to Z! #펌 #시술",
+          "likes": 1616,
+          "views": 22658,
+          "comments": 60,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #전문가 #염색",
+          "likes": 1520,
+          "views": 24062,
+          "comments": 43,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.01,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 2.8
+    },
+    {
+      "username": "hair_clinic_han",
+      "followers": 83193,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "염색 시술 과정 A to Z! #미용사 #살롱",
+          "likes": 3102,
+          "views": 42949,
+          "comments": 116,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "컬러체인지 시술 완벽 가이드! 전문가 노하우 공개 #펌 #전문가",
+          "likes": 2572,
+          "views": 43307,
+          "comments": 100,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피스케일링 시술 완벽 가이드! 전문가 노하우 공개 #살롱 #전문가",
+          "likes": 2394,
+          "views": 34476,
+          "comments": 98,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.05,
+        "JP": 0.04,
+        "OTHER": 0.03
+      },
+      "avg_upload_interval_days": 3.9
+    },
+    {
+      "username": "beauty_salon_lee",
+      "followers": 28036,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #전문가 #펌",
+          "likes": 1096,
+          "views": 14261,
+          "comments": 48,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #두피케어 #미용사",
+          "likes": 835,
+          "views": 13308,
+          "comments": 33,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #살롱 #염색",
+          "likes": 826,
+          "views": 13069,
+          "comments": 38,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.02,
+        "JP": 0.03,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.1
+    },
+    {
+      "username": "curl_master_jung",
+      "followers": 91947,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "염색 시술 완벽 가이드! 전문가 노하우 공개 #시술 #염색",
+          "likes": 3091,
+          "views": 45063,
+          "comments": 117,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #전문가 #염색",
+          "likes": 2531,
+          "views": 39443,
+          "comments": 105,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #미용사 #전문가",
+          "likes": 2399,
+          "views": 29466,
+          "comments": 59,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.9,
+        "US": 0.04,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.9
+    },
+    {
+      "username": "salon_pro_oh",
+      "followers": 58660,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "두피케어 시술 완벽 가이드! 전문가 노하우 공개 #시술 #펌",
+          "likes": 1803,
+          "views": 29788,
+          "comments": 61,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #시술 #미용사",
+          "likes": 1826,
+          "views": 23755,
+          "comments": 65,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #펌 #염색",
+          "likes": 1680,
+          "views": 20505,
+          "comments": 50,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.9,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 3.4
+    },
+    {
+      "username": "color_expert_kang",
+      "followers": 39505,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "두피케어 시술 완벽 가이드! 전문가 노하우 공개 #펌 #미용사",
+          "likes": 986,
+          "views": 16225,
+          "comments": 38,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #전문가 #살롱",
+          "likes": 972,
+          "views": 11697,
+          "comments": 28,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #미용사 #두피케어",
+          "likes": 832,
+          "views": 11995,
+          "comments": 34,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.6
+    },
+    {
+      "username": "beauty_salon_kim",
+      "followers": 87701,
+      "bio": "두피클리닉 원장 | 탈모전문 | 두피진단 & 맞춤케어",
+      "recent_posts": [
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #미용사 #미용사",
+          "likes": 3361,
+          "views": 46932,
+          "comments": 159,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #전문가 #미용사",
+          "likes": 3133,
+          "views": 43876,
+          "comments": 126,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #살롱 #전문가",
+          "likes": 2803,
+          "views": 42793,
+          "comments": 81,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.91,
+        "US": 0.03,
+        "JP": 0.01,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.7
+    },
+    {
+      "username": "hair_lab_park16",
+      "followers": 29765,
+      "bio": "두피클리닉 원장 | 탈모전문 | 두피진단 & 맞춤케어",
+      "recent_posts": [
+        {
+          "caption": "두피 케어의 모든 것! 전문가가 알려드림 #펌 #두피케어",
+          "likes": 762,
+          "views": 11183,
+          "comments": 39,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 완벽 가이드! 전문가 노하우 공개 #미용사 #미용사",
+          "likes": 889,
+          "views": 10057,
+          "comments": 26,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #펌 #살롱",
+          "likes": 656,
+          "views": 11054,
+          "comments": 21,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.02,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.5
+    },
+    {
+      "username": "scalp_care_oh",
+      "followers": 34308,
+      "bio": "하이엔드 헤어 아티스트 | 청담/압구정 활동 | 프리미엄 시술",
+      "recent_posts": [
+        {
+          "caption": "발레아쥬 시술 완벽 가이드! 전문가 노하우 공개 #두피케어 #전문가",
+          "likes": 1608,
+          "views": 18499,
+          "comments": 48,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 과정 A to Z! #시술 #전문가",
+          "likes": 1327,
+          "views": 16508,
+          "comments": 42,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #두피케어 #살롱",
+          "likes": 1150,
+          "views": 18217,
+          "comments": 41,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.04,
+        "JP": 0.03,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 3.0
+    },
+    {
+      "username": "salon_pro_choi",
+      "followers": 70225,
+      "bio": "케라틴 트리트먼트 전문 | 손상모 복구 | 매직/클리닉",
+      "recent_posts": [
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #시술 #살롱",
+          "likes": 2160,
+          "views": 26252,
+          "comments": 89,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 완벽 가이드! 전문가 노하우 공개 #미용사 #시술",
+          "likes": 1921,
+          "views": 30336,
+          "comments": 55,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피스케일링 시술 완벽 가이드! 전문가 노하우 공개 #펌 #미용사",
+          "likes": 1636,
+          "views": 23071,
+          "comments": 76,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.92,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.1
+    },
+    {
+      "username": "hair_artist_kim",
+      "followers": 63026,
+      "bio": "두피클리닉 원장 | 탈모전문 | 두피진단 & 맞춤케어",
+      "recent_posts": [
+        {
+          "caption": "S컬펌 시술 완벽 가이드! 전문가 노하우 공개 #염색 #살롱",
+          "likes": 2403,
+          "views": 39678,
+          "comments": 103,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #염색 #살롱",
+          "likes": 2283,
+          "views": 35944,
+          "comments": 57,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "손상모복구 시술 과정 A to Z! #염색 #전문가",
+          "likes": 2117,
+          "views": 26129,
+          "comments": 91,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.89,
+        "US": 0.03,
+        "JP": 0.04,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.7
+    },
+    {
+      "username": "curl_master_oh",
+      "followers": 88075,
+      "bio": "펌 전문 디자이너 | S컬/C컬/히피펌 | 16년 경력",
+      "recent_posts": [
+        {
+          "caption": "두피케어 시술 과정 A to Z! #전문가 #펌",
+          "likes": 2656,
+          "views": 36308,
+          "comments": 132,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "시술 전후 비교! 놀라운 변화 #펌 #미용사",
+          "likes": 2396,
+          "views": 32023,
+          "comments": 96,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #염색 #살롱",
+          "likes": 2228,
+          "views": 36720,
+          "comments": 90,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.01,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 3.7
+    },
+    {
+      "username": "hair_lab_han",
+      "followers": 78857,
+      "bio": "웨딩 헤어 전문 | 본식/촬영 담당 | 업스타일 마스터",
+      "recent_posts": [
+        {
+          "caption": "발레아쥬 시술 완벽 가이드! 전문가 노하우 공개 #펌 #살롱",
+          "likes": 2647,
+          "views": 36198,
+          "comments": 121,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #살롱 #살롱",
+          "likes": 2316,
+          "views": 37244,
+          "comments": 91,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피스케일링 시술 완벽 가이드! 전문가 노하우 공개 #전문가 #염색",
+          "likes": 2084,
+          "views": 29177,
+          "comments": 69,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.02,
+        "JP": 0.04,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 3.6
+    },
+    {
+      "username": "cut_pro_yoon",
+      "followers": 78736,
+      "bio": "컬러리스트 자격증 보유 | 홍대 살롱 근무 | 염색 전문",
+      "recent_posts": [
+        {
+          "caption": "염색약 조색 비율 공개! 프로만 아는 비법 #두피케어 #살롱",
+          "likes": 2247,
+          "views": 34948,
+          "comments": 71,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "레이어드컷 시술 완벽 가이드! 전문가 노하우 공개 #살롱 #염색",
+          "likes": 2042,
+          "views": 31249,
+          "comments": 62,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "두피스케일링 시술 완벽 가이드! 전문가 노하우 공개 #시술 #염색",
+          "likes": 2018,
+          "views": 28367,
+          "comments": 53,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.93,
+        "US": 0.03,
+        "JP": 0.03,
+        "OTHER": 0.02
+      },
+      "avg_upload_interval_days": 2.8
+    },
+    {
+      "username": "mirae_glow",
+      "followers": 186000,
+      "bio": "glow & shine ✨",
+      "recent_posts": [
+        {
+          "caption": "",
+          "likes": 11200,
+          "views": 172000,
+          "comments": 478,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "",
+          "likes": 10300,
+          "views": 158000,
+          "comments": 423,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "",
+          "likes": 9600,
+          "views": 145000,
+          "comments": 389,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.76,
+        "US": 0.1,
+        "JP": 0.08,
+        "OTHER": 0.06
+      },
+      "avg_upload_interval_days": 1.8,
+      "image_analysis": {
+        "dominant_style": "luxury",
+        "sub_styles": [
+          "glamorous",
+          "radiant"
+        ],
+        "color_palette": "golden_glow",
+        "aesthetic_tags": [
+          "글로우",
+          "럭셔리",
+          "광채",
+          "윤기",
+          "프리미엄"
+        ],
+        "hair_style_tags": [
+          "롱웨이브",
+          "카라멜브라운",
+          "글로시",
+          "볼륨"
+        ],
+        "vibe": "광채나는 럭셔리 글로우 뷰티 인플루언서",
+        "professionalism_score": 0.48,
+        "trend_relevance_score": 0.91
+      }
+    },
+    {
+      "username": "scalp_doctor_han",
+      "followers": 38000,
+      "bio": "두피전문 피부과 의사 | 탈모 상담 | 과학적 헤어케어 | 의학 정보",
+      "recent_posts": [
+        {
+          "caption": "탈모 초기 증상 5가지! 전문의가 알려드림 #탈모케어 #두피",
+          "likes": 1450,
+          "views": 21500,
+          "comments": 62,
+          "timestamp": "2024-12-21"
+        },
+        {
+          "caption": "두피에 좋은 성분 vs 나쁜 성분! #두피케어 #전문가",
+          "likes": 1320,
+          "views": 19500,
+          "comments": 55,
+          "timestamp": "2024-12-18"
+        },
+        {
+          "caption": "계절별 두피 관리법! #두피건강 #홈케어",
+          "likes": 1200,
+          "views": 17800,
+          "comments": 48,
+          "timestamp": "2024-12-15"
+        }
+      ],
+      "audience_countries": {
+        "KR": 0.94,
+        "US": 0.03,
+        "JP": 0.02,
+        "OTHER": 0.01
+      },
+      "avg_upload_interval_days": 3.5
+    }
+  ]
+}

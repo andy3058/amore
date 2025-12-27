@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인플루언서 매칭 - 아모레퍼시픽</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .input-panel {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .panel-title i {
+            color: #6366f1;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form-group .label-sub {
+            font-size: 0.8rem;
+            color: #888;
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        /* 브랜드 선택 */
+        .brand-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .brand-btn {
+            padding: 10px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            background: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .brand-btn:hover {
+            border-color: #6366f1;
+            background: #f5f3ff;
+        }
+
+        .brand-btn.selected {
+            border-color: #6366f1;
+            background: #6366f1;
+            color: white;
+        }
+
+        /* 카테고리 버튼 (1단계) */
+        .category-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .category-btn {
+            padding: 12px 10px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            background: white;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-btn:hover {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+
+        .category-btn.selected {
+            border-color: #10b981;
+            background: #10b981;
+            color: white;
+        }
+
+        .category-btn .icon {
+            font-size: 1.1rem;
+        }
+
+        .category-btn .text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .category-btn .count {
+            font-size: 0.75rem;
+            opacity: 0.7;
+        }
+
+        /* 제품 버튼 (2단계) */
+        .product-section {
+            margin-top: 16px;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .product-section.show {
+            display: block;
+        }
+
+        .product-section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #10b981;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .product-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .product-btn {
+            padding: 8px 14px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .product-btn:hover {
+            border-color: #8b5cf6;
+            background: #f5f3ff;
+        }
+
+        .product-btn.selected {
+            border-color: #8b5cf6;
+            background: #8b5cf6;
+            color: white;
+        }
+
+        /* 선택 표시 */
+        .selection-display {
+            margin-top: 16px;
+            padding: 12px;
+            background: linear-gradient(135deg, #ede9fe 0%, #dbeafe 100%);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .selection-display.show {
+            display: block;
+        }
+
+        .selection-display strong {
+            color: #6366f1;
+        }
+
+        /* 텍스트 입력 */
+        .text-input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            resize: vertical;
+            min-height: 100px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #6366f1;
+        }
+
+        .text-input::placeholder {
+            color: #9ca3af;
+        }
+
+        /* 제출 버튼 */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* 결과 패널 */
+        .result-panel {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            min-height: 500px;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .result-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .result-meta {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            color: #9ca3af;
+        }
+
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .empty-state p {
+            font-size: 1rem;
+        }
+
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e5e7eb;
+            border-top-color: #6366f1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading p {
+            margin-top: 16px;
+            color: #666;
+        }
+
+        /* 추천 카드 */
+        .recommendation-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .recommendation-card {
+            background: #fafafa;
+            border-radius: 14px;
+            padding: 24px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s;
+        }
+
+        .recommendation-card:hover {
+            border-color: #6366f1;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .card-rank {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .card-rank.gold { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .card-rank.silver { background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%); }
+        .card-rank.bronze { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+
+        .card-username {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .card-bio {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .card-scores {
+            display: flex;
+            gap: 8px;
+        }
+
+        .score-badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .score-match {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .score-fis {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .card-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 16px 0;
+            padding: 16px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .card-type {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .type-expert {
+            background: #ede9fe;
+            color: #7c3aed;
+        }
+
+        .type-trendsetter {
+            background: #fce7f3;
+            color: #db2777;
+        }
+
+        .card-reason {
+            margin-top: 16px;
+            padding: 14px;
+            background: #f0fdf4;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+        }
+
+        .card-reason-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #166534;
+            margin-bottom: 6px;
+        }
+
+        .card-reason-text {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .brand-info {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .brand-info-title {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .brand-info-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .brand-tag {
+            padding: 4px 10px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        /* 추천 인원 설정 */
+        .count-inputs {
+            display: flex;
+            gap: 16px;
+        }
+
+        .count-input-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .count-label {
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .count-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .count-btn {
+            width: 32px;
+            height: 32px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .count-btn:hover {
+            border-color: #6366f1;
+            background: #f5f3ff;
+        }
+
+        .count-number {
+            width: 50px;
+            height: 36px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .count-number:focus {
+            outline: none;
+            border-color: #6366f1;
+        }
+
+        /* 숫자 입력 스피너 제거 */
+        .count-number::-webkit-outer-spin-button,
+        .count-number::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .count-number[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-bullhorn"></i> 인플루언서 매칭 시스템</h1>
+            <p>제품 홍보에 최적화된 헤어 인플루언서를 찾아드립니다</p>
+        </header>
+
+        <div class="main-layout">
+            <!-- 입력 패널 -->
+            <div class="input-panel">
+                <div class="panel-title">
+                    <i class="fas fa-sliders-h"></i> 캠페인 설정
+                </div>
+
+                <!-- 브랜드 선택 -->
+                <div class="form-group">
+                    <label>1. 브랜드 선택</label>
+                    <div class="brand-buttons" id="brandButtons">
+                        <!-- JS로 생성 -->
+                    </div>
+                </div>
+
+                <!-- 제품 카테고리 (1단계) -->
+                <div class="form-group">
+                    <label>2. 제품 카테고리 <span class="label-sub">먼저 카테고리를 선택하세요</span></label>
+                    <div class="category-buttons" id="categoryButtons">
+                        <!-- JS로 생성 -->
+                    </div>
+
+                    <!-- 세부 제품 (2단계) -->
+                    <div class="product-section" id="productSection">
+                        <div class="product-section-title">
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="selectedCategoryName">세부 제품 선택</span>
+                        </div>
+                        <div class="product-buttons" id="productButtons">
+                            <!-- JS로 생성 -->
+                        </div>
+                    </div>
+
+                    <!-- 선택 표시 -->
+                    <div class="selection-display" id="selectionDisplay">
+                        선택: <strong id="selectionText"></strong>
+                    </div>
+                </div>
+
+                <!-- 추천 인원 설정 -->
+                <div class="form-group">
+                    <label>3. 추천 인원 설정</label>
+                    <div class="count-inputs">
+                        <div class="count-input-group">
+                            <span class="count-label type-expert">전문가</span>
+                            <div class="count-control">
+                                <button type="button" class="count-btn" onclick="adjustCount('expert', -1)">-</button>
+                                <input type="number" id="expertCount" value="2" min="0" max="10" class="count-number">
+                                <button type="button" class="count-btn" onclick="adjustCount('expert', 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="count-input-group">
+                            <span class="count-label type-trendsetter">트렌드세터</span>
+                            <div class="count-control">
+                                <button type="button" class="count-btn" onclick="adjustCount('trendsetter', -1)">-</button>
+                                <input type="number" id="trendsetterCount" value="3" min="0" max="10" class="count-number">
+                                <button type="button" class="count-btn" onclick="adjustCount('trendsetter', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 제품 설명 -->
+                <div class="form-group">
+                    <label>4. 캠페인 설명 (선택)</label>
+                    <textarea
+                        class="text-input"
+                        id="productDescription"
+                        placeholder="예: 30대 여성 타겟, 프리미엄 이미지, 트렌디한 스타일"
+                    ></textarea>
+                </div>
+
+                <!-- 검색 버튼 -->
+                <button class="submit-btn" id="searchBtn" onclick="searchInfluencers()">
+                    <i class="fas fa-search"></i>
+                    인플루언서 찾기
+                </button>
+            </div>
+
+            <!-- 결과 패널 -->
+            <div class="result-panel">
+                <div id="resultContent">
+                    <div class="empty-state">
+                        <i class="fas fa-user-friends"></i>
+                        <p>브랜드와 제품을 선택하고 인플루언서를 찾아보세요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 상태 관리
+        let selectedBrand = null;
+        let selectedCategory = null;
+        let selectedProduct = null;
+        let categoriesData = {};
+
+        // 초기화
+        window.onload = async function() {
+            await loadBrands();
+            await loadCategories();
+        };
+
+        // 브랜드 목록 로드
+        async function loadBrands() {
+            try {
+                const response = await fetch('/api/brands');
+                const data = await response.json();
+                const hairBrands = data.hair_brands || [];
+                const container = document.getElementById('brandButtons');
+
+                hairBrands.forEach(brand => {
+                    const btn = document.createElement('button');
+                    btn.className = 'brand-btn';
+                    btn.textContent = brand;
+                    btn.onclick = () => selectBrand(brand, btn);
+                    container.appendChild(btn);
+                });
+            } catch (error) {
+                console.error('브랜드 로드 실패:', error);
+            }
+        }
+
+        // 카테고리명 표시용 변환
+        function formatCategoryName(name) {
+            const displayNames = {
+                '세정': '세정',
+                '트리트먼트': '트리트먼트',
+                '에센스오일': '에센스/오일',
+                '스타일링': '스타일링',
+                '염색홈케어': '염색(홈케어)',
+                '염색전문가용': '염색(전문가용)',
+                '펌전문가용': '펌(전문가용)',
+                '두피탈모케어': '두피/탈모케어',
+                '열기구': '열기구',
+                '클리닉전문가용': '클리닉(전문가용)',
+                '살롱전용': '살롱전용',
+                '악세서리': '악세서리',
+                '기타': '기타'
+            };
+            return displayNames[name] || name;
+        }
+
+        // 카테고리 목록 로드
+        async function loadCategories() {
+            try {
+                const response = await fetch('/api/product-categories');
+                const data = await response.json();
+                categoriesData = {};
+
+                const container = document.getElementById('categoryButtons');
+                container.innerHTML = '';
+
+                data.categories.forEach(cat => {
+                    categoriesData[cat.name] = cat;
+
+                    const btn = document.createElement('button');
+                    btn.className = 'category-btn';
+                    btn.dataset.category = cat.name;
+                    btn.innerHTML = `
+                        <span class="icon">${cat.icon}</span>
+                        <span class="text">${formatCategoryName(cat.name)}</span>
+                        <span class="count">${cat.product_count}</span>
+                    `;
+                    btn.onclick = () => selectCategory(cat.name, btn);
+                    container.appendChild(btn);
+                });
+            } catch (error) {
+                console.error('카테고리 로드 실패:', error);
+            }
+        }
+
+        // 브랜드 선택
+        function selectBrand(brand, btn) {
+            document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            selectedBrand = brand;
+        }
+
+        // 카테고리 선택 (1단계)
+        async function selectCategory(categoryName, btn) {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            selectedCategory = categoryName;
+            selectedProduct = null;
+
+            // 세부 제품 로드
+            try {
+                const response = await fetch(`/api/product-categories/${encodeURIComponent(categoryName)}`);
+                const data = await response.json();
+
+                const productSection = document.getElementById('productSection');
+                const productButtons = document.getElementById('productButtons');
+                const categoryTitle = document.getElementById('selectedCategoryName');
+
+                categoryTitle.textContent = `${data.icon} ${categoryName} 세부 제품`;
+                productButtons.innerHTML = '';
+
+                data.products.forEach(product => {
+                    const btn = document.createElement('button');
+                    btn.className = 'product-btn';
+                    btn.textContent = product;
+                    btn.onclick = () => selectProduct(product, btn);
+                    productButtons.appendChild(btn);
+                });
+
+                productSection.classList.add('show');
+                updateSelectionDisplay();
+            } catch (error) {
+                console.error('제품 로드 실패:', error);
+            }
+        }
+
+        // 제품 선택 (2단계)
+        function selectProduct(product, btn) {
+            document.querySelectorAll('.product-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            selectedProduct = product;
+            updateSelectionDisplay();
+        }
+
+        // 선택 표시 업데이트
+        function updateSelectionDisplay() {
+            const display = document.getElementById('selectionDisplay');
+            const text = document.getElementById('selectionText');
+
+            if (selectedCategory || selectedProduct) {
+                display.classList.add('show');
+                const displayCategory = formatCategoryName(selectedCategory);
+                if (selectedProduct) {
+                    text.textContent = `${displayCategory} > ${selectedProduct}`;
+                } else {
+                    text.textContent = displayCategory;
+                }
+            } else {
+                display.classList.remove('show');
+            }
+        }
+
+        // 인플루언서 검색
+        async function searchInfluencers() {
+            const description = document.getElementById('productDescription').value;
+
+            if (!selectedBrand) {
+                alert('브랜드를 선택해주세요.');
+                return;
+            }
+
+            if (!selectedCategory) {
+                alert('제품 카테고리를 선택해주세요.');
+                return;
+            }
+
+            // 로딩 표시
+            showLoading();
+
+            try {
+                const productType = selectedProduct || selectedCategory;
+                const expertCount = parseInt(document.getElementById('expertCount').value) || 0;
+                const trendsetterCount = parseInt(document.getElementById('trendsetterCount').value) || 0;
+
+                if (expertCount + trendsetterCount === 0) {
+                    alert('최소 1명 이상의 인플루언서를 선택해주세요.');
+                    return;
+                }
+
+                const response = await fetch('/api/recommend', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        brand_name: selectedBrand,
+                        product_type: productType,
+                        description: description,
+                        expert_count: expertCount,
+                        trendsetter_count: trendsetterCount
+                    })
+                });
+
+                const data = await response.json();
+                displayResults(data);
+            } catch (error) {
+                console.error('검색 실패:', error);
+                showError();
+            }
+        }
+
+        // 로딩 표시
+        function showLoading() {
+            document.getElementById('resultContent').innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>최적의 인플루언서를 분석 중입니다...</p>
+                </div>
+            `;
+        }
+
+        // 에러 표시
+        function showError() {
+            document.getElementById('resultContent').innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>오류가 발생했습니다. 다시 시도해주세요.</p>
+                </div>
+            `;
+        }
+
+        // 결과 표시
+        function displayResults(data) {
+            const container = document.getElementById('resultContent');
+
+            if (!data.recommendations || data.recommendations.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-search"></i>
+                        <p>조건에 맞는 인플루언서를 찾지 못했습니다.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = `
+                <div class="result-header">
+                    <div class="result-title">추천 인플루언서</div>
+                </div>
+            `;
+
+            // 브랜드 정보
+            if (data.brand_info) {
+                html += `
+                    <div class="brand-info">
+                        <div class="brand-info-title">${data.brand_info.name} - ${data.brand_info.product_type || '헤어케어'}</div>
+                        <div class="brand-info-tags">
+                            <span class="brand-tag">스타일: ${data.brand_info.aesthetic_style || 'Trendy'}</span>
+                            <span class="brand-tag">타겟: ${data.brand_info.target_audience || '일반'}</span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += '<div class="recommendation-list">';
+
+            data.recommendations.forEach((rec, index) => {
+                const rankClass = index === 0 ? 'gold' : (index === 1 ? 'silver' : (index === 2 ? 'bronze' : ''));
+                const typeClass = rec.type === 'Expert' ? 'type-expert' : 'type-trendsetter';
+                const typeLabel = rec.type === 'Expert' ? '전문가' : '트렌드세터';
+
+                html += `
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div class="card-rank ${rankClass}">${rec.rank}</div>
+                                <div>
+                                    <div class="card-username">@${rec.username}</div>
+                                    <div class="card-bio">${rec.details?.bio || ''}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">${formatNumber(rec.followers)}</div>
+                                <div class="stat-label">팔로워</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value"><span class="card-type ${typeClass}">${typeLabel}</span></div>
+                                <div class="stat-label">인플루언서 타입</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${rec.match_score.toFixed(1)}%</div>
+                                <div class="stat-label">적합도</div>
+                            </div>
+                        </div>
+
+                        <div class="card-reason">
+                            <div class="card-reason-title">추천 사유</div>
+                            <div class="card-reason-text">${rec.reason}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // 추천 인원 조절
+        function adjustCount(type, delta) {
+            const input = document.getElementById(type === 'expert' ? 'expertCount' : 'trendsetterCount');
+            let value = parseInt(input.value) || 0;
+            value = Math.max(0, Math.min(10, value + delta));
+            input.value = value;
+        }
+
+        // 숫자 포맷팅
+        function formatNumber(num) {
+            if (num >= 10000) {
+                return (num / 10000).toFixed(1) + '만';
+            }
+            return num.toLocaleString();
+        }
+    </script>
+</body>
+</html>
