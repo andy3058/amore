@@ -10,7 +10,7 @@ AI 헤어 인플루언서 큐레이션 파이프라인
 5. LLM Analyzer: 자연어 입력 분석
 """
 
-from .crawlers import BrandCrawler
+from .crawlers import BrandCrawler, InfluencerCrawler
 from .processors import FISCalculator, InfluencerClassifier, ImageAnalyzer
 from .vectorizer import BrandVectorizer, InfluencerVectorizer
 from .matcher import InfluencerMatcher
@@ -18,6 +18,7 @@ from .llm_analyzer import CampaignAnalyzer
 
 __all__ = [
     'BrandCrawler',
+    'InfluencerCrawler',
     'FISCalculator',
     'InfluencerClassifier',
     'ImageAnalyzer',
