@@ -114,59 +114,7 @@
         "OTHER": 0.05
       },
       "avg_upload_interval_days": 4.3,
-      "_test_label": "fake_likes",
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색",
-          "펌"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.75,
-        "expertise_confidence": 0.81
-      },
-      "fis": {
-        "score": 72.4,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "salon_jiyeon",
@@ -282,55 +230,7 @@
         "OTHER": 0.01
       },
       "avg_upload_interval_days": 3.0,
-      "_test_label": "fake_likes",
-      "influencer_type": "expert",
-      "classification_confidence": 0.95,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "클리닉"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.74,
-        "expertise_confidence": 0.85
-      },
-      "fis": {
-        "score": 68.2,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "color_specialist_lee",
@@ -446,57 +346,7 @@
         "OTHER": 0.04
       },
       "avg_upload_interval_days": 3.0,
-      "_test_label": "fake_likes",
-      "influencer_type": "expert",
-      "classification_confidence": 0.973,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.78,
-        "expertise_confidence": 0.78
-      },
-      "fis": {
-        "score": 66.7,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "perm_artist_park",
@@ -612,58 +462,7 @@
         "OTHER": 0.02
       },
       "avg_upload_interval_days": 4.2,
-      "_test_label": "fake_likes",
-      "influencer_type": "expert",
-      "classification_confidence": 0.957,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "디렉터"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.81,
-        "expertise_confidence": 0.86
-      },
-      "fis": {
-        "score": 71.0,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "cheongdam_hair",
@@ -779,56 +578,7 @@
         "OTHER": 0.03
       },
       "avg_upload_interval_days": 2.7,
-      "_test_label": "fake_likes",
-      "influencer_type": "expert",
-      "classification_confidence": 0.949,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉",
-          "두피케어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.82,
-        "expertise_confidence": 0.76
-      },
-      "fis": {
-        "score": 69.6,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "gangnam_stylist",
@@ -943,57 +693,7 @@
         "JP": 0.01,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 4.6,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.81,
-        "expertise_confidence": 0.73
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.6
     },
     {
       "username": "hair_clinic_seoul",
@@ -1108,55 +808,7 @@
         "JP": 0.02,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.4,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.89,
-        "expertise_confidence": 0.8
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.4
     },
     {
       "username": "beauty_director_han",
@@ -1271,57 +923,7 @@
         "JP": 0.04,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.6,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "커트"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "커트"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.8,
-        "expertise_confidence": 0.79
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.6
     },
     {
       "username": "scalp_care_pro",
@@ -1436,56 +1038,7 @@
         "JP": 0.04,
         "OTHER": 0.01
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.7,
-        "expertise_confidence": 0.83
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "hair_designer_yoon",
@@ -1600,55 +1153,7 @@
         "JP": 0.03,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 3.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "웨딩헤어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.79,
-        "expertise_confidence": 0.76
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.3
     },
     {
       "username": "salon_minjung",
@@ -1763,60 +1268,7 @@
         "JP": 0.02,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "expert",
-      "classification_confidence": 0.976,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.82,
-        "expertise_confidence": 0.79
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "color_lab_korea",
@@ -1931,54 +1383,7 @@
         "JP": 0.01,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 2.2,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.79,
-        "expertise_confidence": 0.76
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.2
     },
     {
       "username": "perm_master_cho",
@@ -2093,55 +1498,7 @@
         "JP": 0.04,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 3.4,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.74,
-        "expertise_confidence": 0.73
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.4
     },
     {
       "username": "hair_artist_jung",
@@ -2256,58 +1613,7 @@
         "JP": 0.03,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 2.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.78,
-        "expertise_confidence": 0.84
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.3
     },
     {
       "username": "beauty_salon_star",
@@ -2422,59 +1728,7 @@
         "JP": 0.05,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 4.9,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.83,
-        "expertise_confidence": 0.85
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.9
     },
     {
       "username": "hair_expert_oh",
@@ -2589,59 +1843,7 @@
         "JP": 0.04,
         "OTHER": 0.01
       },
-      "avg_upload_interval_days": 4.5,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색",
-          "펌"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.84,
-        "expertise_confidence": 0.81
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.5
     },
     {
       "username": "styling_pro_kim",
@@ -2756,55 +1958,7 @@
         "JP": 0.03,
         "OTHER": 0.01
       },
-      "avg_upload_interval_days": 4.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.7,
-        "expertise_confidence": 0.8
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.3
     },
     {
       "username": "color_queen_lee",
@@ -2919,56 +2073,7 @@
         "JP": 0.04,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 4.1,
-      "influencer_type": "expert",
-      "classification_confidence": 0.959,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "히피펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.85,
-        "expertise_confidence": 0.85
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.1
     },
     {
       "username": "hair_doctor_park",
@@ -3083,57 +2188,7 @@
         "JP": 0.02,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "디렉터"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.76,
-        "expertise_confidence": 0.73
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "salon_beauty_j",
@@ -3248,56 +2303,7 @@
         "JP": 0.04,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 4.2,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉",
-          "두피케어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.73,
-        "expertise_confidence": 0.89
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.2
     },
     {
       "username": "premium_hair_studio",
@@ -3412,57 +2418,7 @@
         "JP": 0.02,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 3.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.84,
-        "expertise_confidence": 0.8
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.3
     },
     {
       "username": "hair_healing_center",
@@ -3577,54 +2533,7 @@
         "JP": 0.05,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 4.7,
-      "influencer_type": "expert",
-      "classification_confidence": 0.971,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.84,
-        "expertise_confidence": 0.89
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.7
     },
     {
       "username": "style_creator_min",
@@ -3739,57 +2648,7 @@
         "JP": 0.03,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 3.7,
-      "influencer_type": "expert",
-      "classification_confidence": 0.96,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "커트"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "커트"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.83,
-        "expertise_confidence": 0.78
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.7
     },
     {
       "username": "hair_lab_seoul",
@@ -3904,55 +2763,7 @@
         "JP": 0.03,
         "OTHER": 0.01
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "expert",
-      "classification_confidence": 0.974,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.86,
-        "expertise_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "beauty_hair_pro",
@@ -4067,55 +2878,7 @@
         "JP": 0.01,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 2.5,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "웨딩헤어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.77,
-        "expertise_confidence": 0.76
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.5
     },
     {
       "username": "salon_director_k",
@@ -4230,58 +2993,7 @@
         "JP": 0.02,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 2.2,
-      "influencer_type": "expert",
-      "classification_confidence": 0.978,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "일반시술"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.81,
-        "expertise_confidence": 0.77
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.2
     },
     {
       "username": "hair_specialist_y",
@@ -4396,54 +3108,7 @@
         "JP": 0.03,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.9,
-      "influencer_type": "expert",
-      "classification_confidence": 0.978,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.74,
-        "expertise_confidence": 0.8
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.9
     },
     {
       "username": "color_master_h",
@@ -4558,54 +3223,7 @@
         "JP": 0.04,
         "OTHER": 0.01
       },
-      "avg_upload_interval_days": 2.2,
-      "influencer_type": "expert",
-      "classification_confidence": 0.97,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.79,
-        "expertise_confidence": 0.82
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.2
     },
     {
       "username": "perm_pro_studio",
@@ -4720,56 +3338,7 @@
         "JP": 0.03,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.4,
-      "influencer_type": "expert",
-      "classification_confidence": 0.976,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.79,
-        "expertise_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.4
     },
     {
       "username": "hair_artist_seoul",
@@ -4884,58 +3453,7 @@
         "JP": 0.03,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 2.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.7,
-        "expertise_confidence": 0.73
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.3
     },
     {
       "username": "beauty_expert_lee",
@@ -5050,59 +3568,7 @@
         "JP": 0.02,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 2.9,
-      "influencer_type": "expert",
-      "classification_confidence": 0.979,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색",
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.8,
-        "expertise_confidence": 0.77
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.9
     },
     {
       "username": "salon_style_kim",
@@ -5217,57 +3683,7 @@
         "JP": 0.02,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 2.4,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.74,
-        "expertise_confidence": 0.86
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.4
     },
     {
       "username": "hair_designer_pro",
@@ -5382,59 +3798,7 @@
         "JP": 0.01,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 4.6,
-      "influencer_type": "expert",
-      "classification_confidence": 0.972,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.85,
-        "expertise_confidence": 0.73
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.6
     },
     {
       "username": "color_artist_park",
@@ -5549,59 +3913,7 @@
         "JP": 0.02,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 4.2,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "디렉터"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.75,
-        "expertise_confidence": 0.77
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.2
     },
     {
       "username": "perm_specialist_j",
@@ -5716,55 +4028,7 @@
         "JP": 0.03,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 4.7,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉",
-          "두피케어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.81,
-        "expertise_confidence": 0.84
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.7
     },
     {
       "username": "hair_studio_gang",
@@ -5879,56 +4143,7 @@
         "JP": 0.02,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 2.2,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.82,
-        "expertise_confidence": 0.72
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.2
     },
     {
       "username": "beauty_hair_lab",
@@ -6043,55 +4258,7 @@
         "JP": 0.02,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 3.1,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.84,
-        "expertise_confidence": 0.8
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.1
     },
     {
       "username": "salon_master_yoo",
@@ -6206,57 +4373,7 @@
         "JP": 0.04,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.5,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "커트"
-        ],
-        "certifications_detected": [
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "커트"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.72,
-        "expertise_confidence": 0.75
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.5
     },
     {
       "username": "hair_pro_center",
@@ -6371,55 +4488,7 @@
         "JP": 0.02,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 3.4,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.7,
-        "expertise_confidence": 0.89
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.4
     },
     {
       "username": "style_expert_han",
@@ -6534,56 +4603,7 @@
         "JP": 0.01,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "expert",
-      "classification_confidence": 0.968,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "웨딩헤어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.87,
-        "expertise_confidence": 0.74
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "hair_clinic_pro",
@@ -6698,60 +4718,7 @@
         "JP": 0.04,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 3.0,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "레이어드컷",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.77,
-        "expertise_confidence": 0.76
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.0
     },
     {
       "username": "color_studio_min",
@@ -6866,56 +4833,7 @@
         "JP": 0.02,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.88,
-        "expertise_confidence": 0.82
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "perm_artist_lee",
@@ -7030,55 +4948,7 @@
         "JP": 0.05,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.9,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.88,
-        "expertise_confidence": 0.78
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.9
     },
     {
       "username": "beauty_director_k",
@@ -7193,55 +5063,7 @@
         "JP": 0.01,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 3.5,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌",
-          "커트"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.88,
-        "expertise_confidence": 0.81
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.5
     },
     {
       "username": "hair_master_seoul",
@@ -7356,58 +5178,7 @@
         "JP": 0.01,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 3.3,
-      "influencer_type": "expert",
-      "classification_confidence": 0.935,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "커트"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.89,
-        "expertise_confidence": 0.72
-      },
-      "fis": {
-        "score": 83.6,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.3
     },
     {
       "username": "salon_expert_cho",
@@ -7522,61 +5293,7 @@
         "JP": 0.04,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 2.6,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "펌"
-        ],
-        "certifications_detected": [
-          "원장",
-          "년차"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌",
-          "레이어드컷"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색",
-          "펌"
-        ],
-        "additional_specialties": [
-          "커트"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.8,
-        "expertise_confidence": 0.78
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.6
     },
     {
       "username": "color_pro_jung",
@@ -7691,55 +5408,7 @@
         "JP": 0.03,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 4.6,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색",
-          "커트"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "일반시술"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "헤어시술"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.8,
-        "expertise_confidence": 0.84
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.6
     },
     {
       "username": "hair_artist_oh",
@@ -7854,56 +5523,7 @@
         "JP": 0.01,
         "OTHER": 0.04
       },
-      "avg_upload_interval_days": 3.6,
-      "influencer_type": "expert",
-      "classification_confidence": 0.976,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "염색"
-        ],
-        "certifications_detected": [
-          "경력"
-        ],
-        "techniques_from_caption": [
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "염색"
-        ],
-        "additional_specialties": [
-          "염색"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.83,
-        "expertise_confidence": 0.72
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.6
     },
     {
       "username": "beauty_salon_pro",
@@ -8018,57 +5638,7 @@
         "JP": 0.05,
         "OTHER": 0.02
       },
-      "avg_upload_interval_days": 3.1,
-      "influencer_type": "expert",
-      "classification_confidence": 0.98,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "펌"
-        ],
-        "certifications_detected": [
-          "디렉터"
-        ],
-        "techniques_from_caption": [
-          "히피펌",
-          "볼륨펌"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.85
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "펌"
-        ],
-        "additional_specialties": [
-          "클리닉"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.71,
-        "expertise_confidence": 0.77
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 3.1
     },
     {
       "username": "hair_specialist_kim",
@@ -8183,56 +5753,7 @@
         "JP": 0.05,
         "OTHER": 0.03
       },
-      "avg_upload_interval_days": 4.3,
-      "influencer_type": "expert",
-      "classification_confidence": 1.0,
-      "analysis_strategy": {
-        "primary": "text",
-        "secondary": "image",
-        "reason": "Expert는 bio와 caption에 전문 정보가 풍부함"
-      },
-      "text_analysis": {
-        "analysis_type": "text_primary",
-        "specialties_from_bio": [
-          "클리닉",
-          "두피케어"
-        ],
-        "certifications_detected": [],
-        "techniques_from_caption": [
-          "히피펌",
-          "하이톤염색"
-        ],
-        "caption_detail_level": "high",
-        "text_confidence": 0.6
-      },
-      "image_analysis": {
-        "analysis_type": "image_secondary",
-        "verified_specialties": [
-          "클리닉"
-        ],
-        "additional_specialties": [
-          "펌"
-        ],
-        "signature_techniques": [
-          "볼륨펌",
-          "애쉬염색"
-        ],
-        "client_hair_types": [
-          "웨이브",
-          "스트레이트"
-        ],
-        "color_specialties": [
-          "브라운",
-          "애쉬"
-        ],
-        "work_environment": "salon",
-        "content_quality_score": 0.71,
-        "expertise_confidence": 0.83
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 4.3
     },
     {
       "username": "haru_style",
@@ -8348,55 +5869,7 @@
         "OTHER": 0.08
       },
       "avg_upload_interval_days": 2.6,
-      "_test_label": "viewbot",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion",
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#dailylook"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "Y2K",
-          "데님",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.42,
-        "trend_relevance_score": 0.9,
-        "image_confidence": 0.94
-      },
-      "fis": {
-        "score": 61.8,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "viewbot"
     },
     {
       "username": "minjung_daily",
@@ -8512,54 +5985,7 @@
         "OTHER": 0.1
       },
       "avg_upload_interval_days": 3.0,
-      "_test_label": "viewbot",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "Y2K",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.86,
-        "image_confidence": 0.94
-      },
-      "fis": {
-        "score": 61.8,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "viewbot"
     },
     {
       "username": "yuna_ootd",
@@ -8675,50 +6101,7 @@
         "OTHER": 0.07
       },
       "avg_upload_interval_days": 1.2,
-      "_test_label": "fake_likes",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "미니멀",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.45,
-        "trend_relevance_score": 0.83,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 60.8,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "seo_fashion",
@@ -8834,52 +6217,7 @@
         "OTHER": 0.1
       },
       "avg_upload_interval_days": 1.6,
-      "_test_label": "fake_likes",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "casual",
-          "chic"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "캐주얼",
-          "Y2K",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.46,
-        "trend_relevance_score": 0.92,
-        "image_confidence": 0.92
-      },
-      "fis": {
-        "score": 63.6,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "jin_lookbook",
@@ -8995,53 +6333,7 @@
         "OTHER": 0.06
       },
       "avg_upload_interval_days": 2.3,
-      "_test_label": "fake_likes",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "캐주얼",
-          "데님",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.39,
-        "trend_relevance_score": 0.92,
-        "image_confidence": 0.93
-      },
-      "fis": {
-        "score": 63.6,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "hyun_daily",
@@ -9157,53 +6449,7 @@
         "OTHER": 0.08
       },
       "avg_upload_interval_days": 1.0,
-      "_test_label": "fake_likes",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "Y2K",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.9,
-        "image_confidence": 0.94
-      },
-      "fis": {
-        "score": 60.8,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "sua_style",
@@ -9319,53 +6565,7 @@
         "OTHER": 0.09
       },
       "avg_upload_interval_days": 2.7,
-      "_test_label": "fake_likes",
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "캐주얼",
-          "스트릿패션",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.59,
-        "trend_relevance_score": 0.89,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 63.6,
-        "verdict": "주의 필요"
-      }
+      "_test_label": "fake_likes"
     },
     {
       "username": "minji_look",
@@ -9480,54 +6680,7 @@
         "JP": 0.06,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 2.6,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "modern",
-          "chic"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "데님",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.54,
-        "trend_relevance_score": 0.8,
-        "image_confidence": 0.88
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.6
     },
     {
       "username": "yeonhee_ootd",
@@ -9642,55 +6795,7 @@
         "JP": 0.06,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 2.9,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "데님",
-          "스트릿패션",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.41,
-        "trend_relevance_score": 0.91,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.9
     },
     {
       "username": "jiwon_fashion",
@@ -9805,55 +6910,7 @@
         "JP": 0.06,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 2.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "Y2K",
-          "스트릿패션",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.39,
-        "trend_relevance_score": 0.83,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.5
     },
     {
       "username": "hana_daily",
@@ -9968,54 +7025,7 @@
         "JP": 0.08,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "데님",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.43,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "sooyeon_style",
@@ -10130,56 +7140,7 @@
         "JP": 0.04,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "minimal"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "Y2K",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.44,
-        "trend_relevance_score": 0.86,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "eunji_look",
@@ -10294,52 +7255,7 @@
         "JP": 0.08,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.9,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "미니멀",
-          "스트릿패션",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.56,
-        "trend_relevance_score": 0.92,
-        "image_confidence": 0.88
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.9
     },
     {
       "username": "dahyun_ootd",
@@ -10454,52 +7370,7 @@
         "JP": 0.05,
         "OTHER": 0.08
       },
-      "avg_upload_interval_days": 2.7,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "캐주얼",
-          "Y2K",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.56,
-        "trend_relevance_score": 0.84,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.7
     },
     {
       "username": "chaeyoung_life",
@@ -10614,54 +7485,7 @@
         "JP": 0.04,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 2.0,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#dailylook"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "캐주얼",
-          "데님",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.48,
-        "trend_relevance_score": 0.89,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.0
     },
     {
       "username": "nayeon_style",
@@ -10776,55 +7600,7 @@
         "JP": 0.06,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion",
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "캐주얼",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.44,
-        "trend_relevance_score": 0.95,
-        "image_confidence": 0.94
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "jihyo_daily",
@@ -10939,54 +7715,7 @@
         "JP": 0.04,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "Y2K",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.32,
-        "trend_relevance_score": 0.88,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "momo_look",
@@ -11101,54 +7830,7 @@
         "JP": 0.05,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "캐주얼",
-          "스트릿패션",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.4,
-        "trend_relevance_score": 0.88,
-        "image_confidence": 0.92
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "sana_ootd",
@@ -11263,53 +7945,7 @@
         "JP": 0.07,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 1.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "캐주얼",
-          "스트릿패션",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.56,
-        "trend_relevance_score": 0.84,
-        "image_confidence": 0.89
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.8
     },
     {
       "username": "tzuyu_fashion",
@@ -11424,54 +8060,7 @@
         "JP": 0.07,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "캐주얼",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.54,
-        "trend_relevance_score": 0.95,
-        "image_confidence": 0.93
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "rose_style",
@@ -11586,54 +8175,7 @@
         "JP": 0.06,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.6,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "미니멀",
-          "스트릿패션",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.43,
-        "trend_relevance_score": 0.8,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.6
     },
     {
       "username": "jennie_daily",
@@ -11748,54 +8290,7 @@
         "JP": 0.04,
         "OTHER": 0.05
       },
-      "avg_upload_interval_days": 1.3,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "미니멀",
-          "Y2K",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.5,
-        "trend_relevance_score": 0.81,
-        "image_confidence": 0.85
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.3
     },
     {
       "username": "lisa_look",
@@ -11910,53 +8405,7 @@
         "JP": 0.05,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 1.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "modern",
-          "chic"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "미니멀",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.58,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.8
     },
     {
       "username": "jisoo_ootd",
@@ -12071,55 +8520,7 @@
         "JP": 0.05,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.0,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "Y2K",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.56,
-        "trend_relevance_score": 0.95,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.0
     },
     {
       "username": "irene_fashion",
@@ -12234,53 +8635,7 @@
         "JP": 0.05,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "캐주얼",
-          "Y2K",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.57,
-        "trend_relevance_score": 0.81,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "seulgi_style",
@@ -12395,53 +8750,7 @@
         "JP": 0.04,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "Y2K",
-          "데님",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.57,
-        "trend_relevance_score": 0.89,
-        "image_confidence": 0.85
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.8
     },
     {
       "username": "wendy_daily",
@@ -12556,55 +8865,7 @@
         "JP": 0.06,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.9,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "minimal"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#dailylook"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "데님",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.48,
-        "trend_relevance_score": 0.86,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.9
     },
     {
       "username": "joy_look",
@@ -12719,53 +8980,7 @@
         "JP": 0.07,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "미니멀",
-          "스트릿패션",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.37,
-        "trend_relevance_score": 0.84,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "yeri_ootd",
@@ -12880,53 +9095,7 @@
         "JP": 0.03,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 1.2,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "casual",
-          "chic"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "Y2K",
-          "미니멀",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.43,
-        "trend_relevance_score": 0.83,
-        "image_confidence": 0.89
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.2
     },
     {
       "username": "winter_fashion",
@@ -13041,54 +9210,7 @@
         "JP": 0.06,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 2.3,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "캐주얼",
-          "스트릿패션",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.36,
-        "trend_relevance_score": 0.91,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.3
     },
     {
       "username": "karina_style",
@@ -13203,55 +9325,7 @@
         "JP": 0.08,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion",
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "캐주얼",
-          "데님",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.47,
-        "trend_relevance_score": 0.82,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "giselle_daily",
@@ -13366,52 +9440,7 @@
         "JP": 0.05,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 2.0,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#fashion"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "데님",
-          "Y2K",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.41,
-        "trend_relevance_score": 0.82,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.0
     },
     {
       "username": "ningning_look",
@@ -13526,54 +9555,7 @@
         "JP": 0.06,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 1.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "데님",
-          "미니멀",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.54,
-        "trend_relevance_score": 0.81,
-        "image_confidence": 0.89
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.1
     },
     {
       "username": "ive_yujin",
@@ -13688,54 +9670,7 @@
         "JP": 0.03,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 1.2,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "modern",
-          "chic"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "캐주얼",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.53,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.88
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.2
     },
     {
       "username": "wonyoung_ootd",
@@ -13850,53 +9785,7 @@
         "JP": 0.05,
         "OTHER": 0.08
       },
-      "avg_upload_interval_days": 2.4,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "Y2K",
-          "데님",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.35,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.4
     },
     {
       "username": "leeseo_style",
@@ -14011,53 +9900,7 @@
         "JP": 0.07,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 1.6,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "미니멀",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.57,
-        "trend_relevance_score": 0.9,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.6
     },
     {
       "username": "gaeul_daily",
@@ -14172,54 +10015,7 @@
         "JP": 0.07,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "modern",
-          "chic"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "캐주얼",
-          "Y2K",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.54,
-        "trend_relevance_score": 0.91,
-        "image_confidence": 0.88
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "rei_look",
@@ -14334,54 +10130,7 @@
         "JP": 0.05,
         "OTHER": 0.08
       },
-      "avg_upload_interval_days": 1.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "미니멀",
-          "Y2K",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.83,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.5
     },
     {
       "username": "liz_ootd",
@@ -14496,56 +10245,7 @@
         "JP": 0.07,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.2,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "casual",
-          "chic"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "미니멀",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.43,
-        "trend_relevance_score": 0.89,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.2
     },
     {
       "username": "kazuha_fashion",
@@ -14660,54 +10360,7 @@
         "JP": 0.03,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.4,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "warm_gold",
-        "aesthetic_tags": [
-          "캐주얼",
-          "데님",
-          "스트릿패션"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.33,
-        "trend_relevance_score": 0.92,
-        "image_confidence": 0.9
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.4
     },
     {
       "username": "sakura_style",
@@ -14822,54 +10475,7 @@
         "JP": 0.04,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.5,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "luxury",
-        "sub_styles": [
-          "modern",
-          "casual"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "Y2K",
-          "데님",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.9,
-        "image_confidence": 0.93
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.5
     },
     {
       "username": "chaewon_daily",
@@ -14984,55 +10590,7 @@
         "JP": 0.07,
         "OTHER": 0.07
       },
-      "avg_upload_interval_days": 1.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style",
-          "minimal"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "casual",
-          "chic"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "미니멀",
-          "캐주얼",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.59,
-        "trend_relevance_score": 0.8,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.1
     },
     {
       "username": "yunjin_look",
@@ -15147,53 +10705,7 @@
         "JP": 0.06,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 2.3,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "chic",
-          "casual"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "미니멀",
-          "Y2K",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "히피펌"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.94
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.3
     },
     {
       "username": "eunchae_ootd",
@@ -15308,55 +10820,7 @@
         "JP": 0.03,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#style",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "casual",
-          "chic"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "미니멀",
-          "Y2K",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "레이어드컷",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.33,
-        "trend_relevance_score": 0.95,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "sullyoon_fashion",
@@ -15471,53 +10935,7 @@
         "JP": 0.08,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.7,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "minimal",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "스트릿패션",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.35,
-        "trend_relevance_score": 0.9,
-        "image_confidence": 0.93
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.7
     },
     {
       "username": "haewon_style",
@@ -15632,54 +11050,7 @@
         "JP": 0.07,
         "OTHER": 0.1
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion",
-          "daily"
-        ],
-        "hashtags_from_caption": [
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "modern",
-          "chic"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "캐주얼",
-          "Y2K",
-          "미니멀"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.38,
-        "trend_relevance_score": 0.89,
-        "image_confidence": 0.91
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "bae_daily",
@@ -15794,54 +11165,7 @@
         "JP": 0.07,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 2.3,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "ootd"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "natural",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "neutral_cool",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "Y2K",
-          "데님"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "웨이브"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.41,
-        "trend_relevance_score": 0.84,
-        "image_confidence": 0.87
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.3
     },
     {
       "username": "jiwoo_look",
@@ -15956,54 +11280,7 @@
         "JP": 0.06,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 1.7,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "lifestyle"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.3
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "chic",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "미니멀",
-          "스트릿패션",
-          "캐주얼"
-        ],
-        "hair_style_tags": [
-          "웨이브",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.6,
-        "trend_relevance_score": 0.94,
-        "image_confidence": 0.88
-      },
-      "fis": {
-        "score": 85.0,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.7
     },
     {
       "username": "lily_ootd",
@@ -16118,53 +11395,7 @@
         "JP": 0.07,
         "OTHER": 0.09
       },
-      "avg_upload_interval_days": 2.1,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "style"
-        ],
-        "hashtags_from_caption": [
-          "#fashion",
-          "#ootd"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "trendy",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "데님",
-          "스트릿패션",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "히피펌",
-          "C컬"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.49,
-        "trend_relevance_score": 0.84,
-        "image_confidence": 0.86
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 2.1
     },
     {
       "username": "kyujin_fashion",
@@ -16279,62 +11510,14 @@
         "JP": 0.06,
         "OTHER": 0.06
       },
-      "avg_upload_interval_days": 1.8,
-      "influencer_type": "trendsetter",
-      "classification_confidence": 0.4,
-      "analysis_strategy": {
-        "primary": "image",
-        "secondary": "text",
-        "reason": "Trendsetter는 bio/caption이 간략하여 이미지 분석이 핵심"
-      },
-      "text_analysis": {
-        "analysis_type": "text_secondary",
-        "keywords_from_bio": [
-          "fashion"
-        ],
-        "hashtags_from_caption": [
-          "#dailylook",
-          "#ootd",
-          "#style"
-        ],
-        "caption_detail_level": "low",
-        "extractable_info": "minimal",
-        "text_confidence": 0.5
-      },
-      "image_analysis": {
-        "analysis_type": "image_primary",
-        "dominant_style": "colorful",
-        "sub_styles": [
-          "casual",
-          "modern"
-        ],
-        "color_palette": "monochrome",
-        "aesthetic_tags": [
-          "스트릿패션",
-          "데님",
-          "Y2K"
-        ],
-        "hair_style_tags": [
-          "C컬",
-          "레이어드컷"
-        ],
-        "vibe": "트렌디하고 세련된 스타일",
-        "professionalism_score": 0.47,
-        "trend_relevance_score": 0.83,
-        "image_confidence": 0.89
-      },
-      "fis": {
-        "score": 82.2,
-        "verdict": "신뢰 계정"
-      }
+      "avg_upload_interval_days": 1.8
     }
   ],
   "metadata": {
-    "processed_at": "2025-12-30T03:43:16.494781",
+    "crawled_at": "2025-12-30T03:42:19.986240",
     "total_count": 100,
-    "expert_count": 50,
-    "trendsetter_count": 50,
-    "status": "processed",
-    "schema_version": "3.0"
+    "posts_per_influencer": 10,
+    "status": "raw",
+    "note": "크롤러에서 수집한 raw 데이터 (Processor에서 분류/분석 필요)"
   }
 }
