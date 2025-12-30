@@ -140,6 +140,19 @@ PRODUCT_CATEGORIES = {
             '헤어 미스트',
             '디퓨저'
         ]
+    },
+    '기타': {
+        'description': '기타 헤어 관련 제품',
+        'icon': '📦',
+        'target': 'both',
+        'marketing_approach': 'consumer',
+        'brands': ['려', '미쟝센', '라보에이치', '아윤채', '아모스 프로페셔널', '롱테이크'],
+        'products': [
+            '기타 제품',
+            '신제품',
+            '한정판',
+            '기획세트'
+        ]
     }
 }
 
@@ -228,5 +241,5 @@ BRAND_PRODUCT_LINES = {
 MARKETING_APPROACH_CATEGORIES = {
     'professional': ['살롱 케어', '살롱 염색', '살롱 펌'],
     'expert_oriented': ['두피케어'],
-    'consumer': ['샴푸', '트리트먼트', '에센스', '스타일링', '셀프염색', '헤어 프래그런스']
+    'consumer': ['샴푸', '트리트먼트', '에센스', '스타일링', '셀프염색', '헤어 프래그런스', '기타']
 }

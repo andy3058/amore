@@ -13,6 +13,9 @@ pandas>=2.0.0
 # sentence-transformers>=2.2.0
 # torch>=2.0.0
 
+# RAG & Vector DB
+chromadb>=0.4.0
+
 # OpenAI API (for image analysis)
 openai>=1.0.0
 httpx>=0.25.0

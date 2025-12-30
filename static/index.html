@@ -716,9 +716,19 @@
                     </div>
                 </div>
 
+                <!-- 타겟 성별 선택 -->
+                <div class="form-group">
+                    <label>4. 타겟 성별 <span class="label-sub">선택 시 해당 성별 전문 인플루언서 우선</span></label>
+                    <div class="brand-buttons" id="genderButtons">
+                        <button type="button" class="brand-btn selected" data-gender="" onclick="selectGender('', this)">전체</button>
+                        <button type="button" class="brand-btn" data-gender="female" onclick="selectGender('female', this)">여성</button>
+                        <button type="button" class="brand-btn" data-gender="male" onclick="selectGender('male', this)">남성</button>
+                    </div>
+                </div>
+
                 <!-- 제품 설명 -->
                 <div class="form-group">
-                    <label>4. 제품 설명 및 홍보 내용 (선택)</label>
+                    <label>5. 제품 설명 및 홍보 내용 (선택)</label>
                     <textarea
                         class="text-input"
                         id="productDescription"
@@ -750,6 +760,7 @@
         let selectedBrand = null;
         let selectedCategory = null;
         let selectedProduct = null;
+        let selectedGender = '';  // '' | 'female' | 'male'
         let categoriesData = {};
 
         // 초기화
@@ -829,9 +840,16 @@
 
         // 브랜드 선택
         function selectBrand(brand, btn) {
-            document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('selected'));
+            document.querySelectorAll('#brandButtons .brand-btn').forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
             selectedBrand = brand;
+        }
+
+        // 성별 선택
+        function selectGender(gender, btn) {
+            document.querySelectorAll('#genderButtons .brand-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            selectedGender = gender;
         }
 
         // 카테고리 선택 (1단계)
@@ -928,6 +946,7 @@
                         brand_name: selectedBrand,
                         product_type: productType,
                         description: description,
+                        target_gender: selectedGender || null,
                         expert_count: expertCount,
                         trendsetter_count: trendsetterCount
                     })
@@ -961,7 +980,7 @@
             `;
         }
 
-        // 결과 표시
+        // 결과 표시 (RAG 기반 API 응답 형식)
         function displayResults(data) {
             const container = document.getElementById('resultContent');
 
@@ -977,20 +996,20 @@
 
             let html = `
                 <div class="result-header">
-                    <div class="result-title">추천 인플루언서</div>
+                    <div class="result-title">추천 인플루언서 (${data.total_results}명)</div>
                 </div>
             `;
 
-            // 브랜드 정보
+            // 브랜드 + 제품 정보
             if (data.brand_info) {
+                const productType = data.query?.product_type || '헤어케어';
+                const descSummary = data.description_summary || '';
+
                 html += `
                     <div class="brand-info">
-                        <div class="brand-info-title">${data.brand_info.name} - ${data.brand_info.product_type || '헤어케어'}</div>
-                        <div class="brand-info-tags">
-                            <span class="brand-tag">스타일: ${data.brand_info.aesthetic_style || 'Trendy'}</span>
-                            <span class="brand-tag">타겟: ${data.brand_info.target_audience || '일반'}</span>
-                        </div>
+                        <div class="brand-info-title">${data.brand_info.name} - ${productType}</div>
                         ${data.brand_analysis ? `<div class="brand-analysis-text">${data.brand_analysis}</div>` : ''}
+                        ${descSummary ? `<div class="brand-analysis-text" style="margin-top: 8px; color: #555;"><strong>홍보 목표:</strong> ${descSummary}</div>` : ''}
                     </div>
                 `;
             }
@@ -999,13 +1018,28 @@
 
             data.recommendations.forEach((rec, index) => {
                 const rankClass = index === 0 ? 'gold' : (index === 1 ? 'silver' : (index === 2 ? 'bronze' : ''));
-                const typeClass = rec.type === 'Expert' ? 'type-expert' : 'type-trendsetter';
-                const typeLabel = rec.type === 'Expert' ? '전문가' : '트렌드세터';
-                const needsWarning = rec.match_score < 70;
-                const warningBadge = needsWarning ? '<span class="score-warning">확인 요망</span>' : '';
 
-                // 추천 사유 줄바꿈 처리
-                const formattedReason = rec.reason.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
+                // RAG 프로필에서 데이터 추출
+                const ragProfile = rec.rag_profile || {};
+                const infData = rec.influencer_data || {};
+
+                const infType = ragProfile.influencer_type || 'trendsetter';
+                const typeClass = infType === 'expert' ? 'type-expert' : 'type-trendsetter';
+                const typeLabel = infType === 'expert' ? '전문가' : '트렌드세터';
+
+                // 매칭 점수 (이미 백엔드에서 50~100 스케일로 조정됨)
+                const matchScore = rec.match_score || 75;
+                const needsWarning = matchScore < 70;
+                const warningBadge = needsWarning ? '<span class="score-warning">확인 필요</span>' : '';
+
+                const followers = infData.followers || 0;
+                // persona를 인플루언서 설명으로 사용 (bio 대신)
+                // Expert -> 전문가 인플루언서로 변환
+                let persona = ragProfile.persona || '트렌디한 콘텐츠를 제작하는 인플루언서';
+                persona = persona.replace(/Expert/g, '전문가 인플루언서');
+
+                // 추천 사유 (백엔드에서 생성된 것 사용)
+                const reason = rec.match_reason || '브랜드와 제품에 적합한 인플루언서입니다.';
 
                 html += `
                     <div class="recommendation-card ${needsWarning ? 'low-score' : ''}">
@@ -1014,29 +1048,29 @@
                                 <div class="card-rank ${rankClass}">${rec.rank}</div>
                                 <div>
                                     <div class="card-username">@${rec.username}</div>
-                                    <div class="card-bio">${rec.details?.bio || ''}</div>
+                                    <div class="card-bio">${persona}</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card-stats">
                             <div class="stat-item">
-                                <div class="stat-value">${formatNumber(rec.followers)}</div>
+                                <div class="stat-value">${formatNumber(followers)}</div>
                                 <div class="stat-label">팔로워</div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-value"><span class="card-type ${typeClass}">${typeLabel}</span></div>
-                                <div class="stat-label">인플루언서 타입</div>
+                                <div class="stat-label">타입</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-value">${rec.match_score.toFixed(1)}% ${warningBadge}</div>
-                                <div class="stat-label">적합도</div>
+                                <div class="stat-value">${matchScore.toFixed(1)}% ${warningBadge}</div>
+                                <div class="stat-label">매칭 점수</div>
                             </div>
                         </div>
 
                         <div class="card-reason">
                             <div class="card-reason-title">추천 사유</div>
-                            <div class="card-reason-text"><p>${formattedReason}</p></div>
+                            <div class="card-reason-text"><p>${reason}</p></div>
                         </div>
                     </div>
                 `;

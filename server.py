@@ -77,6 +77,31 @@ INFLUENCERS, BRAND_DB = load_data()
 init_routes(BRAND_DB, INFLUENCERS)
 app.include_router(router, prefix="/api")
 
+# RAG 인덱싱 (서버 시작 시 자동 실행)
+def init_rag_index():
+    """RAG 인덱스 초기화 - 인덱싱이 안 되어 있으면 자동 실행"""
+    try:
+        from pipeline import RAG_AVAILABLE, InfluencerAnalysisManager
+        if not RAG_AVAILABLE:
+            print("RAG 시스템 비활성화 (ChromaDB 없음)")
+            return
+
+        manager = InfluencerAnalysisManager()
+        stats = manager.rag.get_stats() if hasattr(manager.rag, 'get_stats') else {}
+        indexed_count = len(manager.rag.get_all_usernames()) if hasattr(manager.rag, 'get_all_usernames') else 0
+
+        if indexed_count == 0:
+            print(f"RAG 인덱싱 시작 ({len(INFLUENCERS)}명)...")
+            result = manager.analyze_and_index_all(INFLUENCERS)
+            print(f"RAG 인덱싱 완료: {result.get('indexed', 0)}명 인덱싱됨")
+        else:
+            print(f"RAG 인덱스 로드됨: {indexed_count}명")
+    except Exception as e:
+        print(f"RAG 초기화 오류: {e}")
+
+# 앱 시작 시 RAG 초기화
+init_rag_index()
+
 
 # ============== 메인 페이지 ==============
 

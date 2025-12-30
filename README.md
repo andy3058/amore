@@ -1,24 +1,31 @@
 # AI 헤어 인플루언서 큐레이션 에이전트
 
-아모레퍼시픽 헤어 브랜드와 인플루언서 최적 매칭을 위한 AI 기반 추천 시스템
+아모레퍼시픽 헤어 브랜드와 인플루언서 최적 매칭을 위한 RAG 기반 AI 추천 시스템
 
 ## 주요 기능
 
-- **Expert/Trendsetter 분류**: 인플루언서 유형 자동 분류 및 분석 전략 분리
-  - Expert: 텍스트 분석 Primary (bio/caption이 풍부)
-  - Trendsetter: 이미지 분석 Primary (시각적 스타일 중심)
+- **RAG 기반 추천**: ChromaDB 벡터 검색 + LLM 분석으로 정확한 인플루언서 매칭
+- **Expert/Trendsetter 분류**: 인플루언서 유형 자동 분류
+  - Expert: 미용사, 살롱 원장, 헤어 시술 전문가
+  - Trendsetter: 뷰티 인플루언서, 스타일 크리에이터
 - **FIS (Fake Integrity Score)**: 6가지 지표로 허수 계정 필터링
-- **7차원 벡터 매칭**: 코사인 유사도 기반 브랜드-인플루언서 매칭
-- **LLM 기반 캠페인 분석**: 자연어로 캠페인 설명하면 최적 인플루언서 추천
-- **XAI 추천 사유**: LLM이 생성하는 추천 이유 설명
+- **다각화된 추천 사유**: 인플루언서 특성에 맞는 상세한 추천 이유 제공
+- **타겟 필터링**: 성별, 연령대 기반 정밀 필터링
 
 ## 시스템 아키텍처
 
 ```
-Crawler → Processor → Vectorizer → Matcher → LLM Analyzer
-   ↓          ↓           ↓           ↓           ↓
- 수집       분류/분석    벡터화      매칭       추천이유
+Crawler → Processor → RAG Analyzer → API
+   ↓          ↓            ↓           ↓
+ 수집     분류/FIS    벡터 인덱싱    추천
 ```
+
+### RAG 파이프라인
+
+1. **인덱싱**: LLM Vision으로 인플루언서 이미지 분석 → ChromaDB에 벡터 저장
+2. **검색**: 브랜드+제품+캠페인 설명으로 쿼리 생성 → 유사도 검색
+3. **필터링**: 성별/연령대/FIS 기준 필터링
+4. **추천**: 상세한 추천 사유와 함께 결과 반환
 
 ## 빠른 시작
 
@@ -31,12 +38,11 @@ cp .env.example .env
 # .env 파일에 OPENAI_API_KEY 설정
 
 # 실행
-./run.sh
-# 또는
 python server.py
 
-# 종료
-./stop.sh
+# 또는 스크립트 사용
+./run.sh   # 시작
+./stop.sh  # 종료
 ```
 
 ## 접속
@@ -57,6 +63,8 @@ amore/
 │   └── routes.py          # 엔드포인트 정의
 │
 ├── pipeline/              # 핵심 파이프라인 모듈
+│   ├── __init__.py        # 모듈 초기화
+│   │
 │   ├── crawlers.py        # 데이터 수집
 │   │   ├── BrandCrawler       # 브랜드 JSON 관리
 │   │   └── InfluencerCrawler  # Instagram Graph API 수집
@@ -67,25 +75,19 @@ amore/
 │   │   ├── InfluencerClassifier # Expert/Trendsetter 분류
 │   │   └── ImageAnalyzer        # LLM 비전 이미지 분석
 │   │
-│   ├── vectorizer.py      # 벡터화
-│   │   ├── BrandVectorizer      # 브랜드 7차원 벡터
-│   │   ├── InfluencerVectorizer # 인플루언서 7차원 벡터
-│   │   └── cosine_similarity    # 유사도 계산
-│   │
-│   ├── matcher.py         # 매칭 엔진
-│   │   └── InfluencerMatcher    # 적합도 계산 및 추천
-│   │
-│   └── llm_analyzer.py    # LLM 분석
-│       └── CampaignAnalyzer     # 캠페인 설명 분석
+│   └── rag_analyzer.py    # RAG 시스템 (핵심)
+│       ├── InfluencerImageAnalyzer  # LLM Vision 이미지 분석
+│       ├── InfluencerRAG            # ChromaDB 벡터 검색
+│       └── InfluencerAnalysisManager # 통합 관리자
 │
 ├── config/                # 설정
 │   ├── products.py        # 제품 카테고리/키워드
 │   └── instagram.py       # Instagram API 설정
 │
 ├── data/                  # 데이터
-│   ├── influencers_data.json  # 처리된 인플루언서 (100명)
-│   ├── influencers_raw.json   # Raw 크롤링 데이터
-│   └── amore_brands.json      # 아모레퍼시픽 헤어 브랜드
+│   ├── influencers_data.json  # 인플루언서 데이터 (300명)
+│   ├── amore_brands.json      # 아모레퍼시픽 헤어 브랜드
+│   └── influencer_rag/        # ChromaDB 인덱스 (자동 생성)
 │
 ├── scripts/               # 유틸리티 스크립트
 │   └── generate_sample_data.py  # 샘플 데이터 생성
@@ -100,12 +102,12 @@ amore/
 
 ```
 Expert: 미용사, 살롱 원장, 시술 전문가
-  → 텍스트 분석 Primary (bio/caption에 전문 정보 풍부)
-  → 이미지 분석 Secondary (검증용)
+  - 키워드: 원장, 미용사, 살롱, 시술, 펌, 염색 등
+  - 분석 전략: 텍스트 Primary (bio/caption 분석)
 
 Trendsetter: 스타일 크리에이터, 뷰티 인플루언서
-  → 이미지 분석 Primary (bio가 간략하여 시각적 분석 필수)
-  → 텍스트 분석 Secondary (해시태그 등 보조)
+  - 키워드: 크리에이터, 인플루언서, OOTD, 데일리룩 등
+  - 분석 전략: 이미지 Primary (시각적 스타일 분석)
 ```
 
 ### 2. FIS (Fake Integrity Score)
@@ -121,15 +123,15 @@ D:   지리적 정합성 (한국 타겟)
 DUP: 중복 콘텐츠 비율
 
 가중치: V=0.20, A=0.25, E=0.15, ACS=0.10, D=0.15, DUP=0.15
+점수 기준: 80+ 신뢰 계정, 60-79 주의 필요, 60 미만 허수 의심
 ```
 
-### 3. 7차원 벡터 매칭
+### 3. RAG 벡터 검색
 
-```
-벡터: [luxury, professional, expert_pref, trend_pref, colorful, natural, modern]
-
-적합도 = (유사도 × 0.25) + (FIS × 0.15) + (제품적합도 × 0.35) + (고유특성 × 0.25)
-```
+- **임베딩**: OpenAI text-embedding-ada-002
+- **벡터 DB**: ChromaDB (로컬 저장)
+- **메타데이터 필터링**: influencer_type, target_gender, fis_score
+- **유사도**: 코사인 유사도 기반 검색
 
 ## API 엔드포인트
 
@@ -137,8 +139,19 @@ DUP: 중복 콘텐츠 비율
 
 | 메서드 | 엔드포인트 | 설명 |
 |--------|-----------|------|
-| POST | `/api/recommend` | 기본 인플루언서 추천 |
-| POST | `/api/recommend-campaign` | 캠페인 맞춤 추천 |
+| POST | `/api/recommend` | 인플루언서 추천 (RAG 기반) |
+
+**요청 예시:**
+```json
+{
+  "brand_name": "려",
+  "product_type": "탈모케어 샴푸",
+  "description": "30,40대 여성 대상 탈모 예방 캠페인",
+  "target_gender": "female",
+  "expert_count": 2,
+  "trendsetter_count": 3
+}
+```
 
 ### 브랜드 API
 
@@ -152,55 +165,66 @@ DUP: 중복 콘텐츠 비율
 | 메서드 | 엔드포인트 | 설명 |
 |--------|-----------|------|
 | GET | `/api/product-categories` | 제품 카테고리 |
-| GET | `/api/product-categories/{name}` | 세부 제품 |
+| GET | `/api/product-categories/{name}` | 카테고리별 제품 |
+| GET | `/api/product-types` | 전체 제품 유형 |
 
 ### 인플루언서 API
 
 | 메서드 | 엔드포인트 | 설명 |
 |--------|-----------|------|
 | GET | `/api/influencers` | 인플루언서 목록 |
-| GET | `/api/influencers/{username}` | 인플루언서 분석 |
+| GET | `/api/influencers/{username}` | 인플루언서 상세 분석 |
+
+### RAG 관리 API
+
+| 메서드 | 엔드포인트 | 설명 |
+|--------|-----------|------|
+| POST | `/api/rag/analyze` | 인플루언서 분석 및 인덱싱 |
+| GET | `/api/rag/status` | RAG 시스템 상태 |
+| GET | `/api/rag/influencer/{username}` | RAG 프로필 조회 |
 
 ### 기타
 
 | 메서드 | 엔드포인트 | 설명 |
 |--------|-----------|------|
-| POST | `/api/chat` | 챗봇 대화 |
 | GET | `/health` | 헬스 체크 |
-
-## 캠페인 매칭 예시
-
-```bash
-curl -X POST "http://localhost:8000/api/recommend-campaign" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "brand_name": "려",
-    "campaign_query": "탈모 고민 있는 30대 남성 대상 루트젠 샴푸 캠페인",
-    "top_k": 5
-  }'
-```
 
 ## 지원 브랜드
 
-| 브랜드 | 스타일 | 특징 |
-|--------|--------|------|
-| 려 (Ryo) | Natural | 한방, 탈모케어 |
-| 미쟝센 | Trendy | 트렌디, 스타일링 |
-| 라보에이치 | Natural | 더마, 두피과학 |
-| 아모스프로페셔널 | Classic | 살롱 전문가용 |
-| 아윤채 | Luxury | 프리미엄, 럭셔리 |
-| 롱테이크 | Trendy | 지속가능, 향수 |
+| 브랜드 | 스타일 | 주요 제품 |
+|--------|--------|----------|
+| 려 (Ryo) | Natural | 탈모케어 샴푸, 두피세럼, 트리트먼트 |
+| 미쟝센 | Trendy | 에센스, 셀프염색(헬로버블), 스타일링 |
+| 라보에이치 | Natural | 두피케어 샴푸, 스캘프 세럼 |
+| 아윤채 | Luxury | PRO 샴푸/트리트먼트, 염색약, 펌제 |
+| 아모스 프로페셔널 | Classic | 살롱 염색약, 펌제, 클리닉 |
+| 롱테이크 | Trendy | 헤어 퍼퓸, 디퓨저, 샴푸 |
+
+## 제품 카테고리
+
+- **소비자용**: 샴푸, 트리트먼트, 에센스, 스타일링, 셀프염색, 헤어 프래그런스
+- **전문가용**: 살롱 케어, 살롱 염색, 살롱 펌
+- **공통**: 두피케어, 기타
 
 ## 기술 스택
 
 - **Backend**: FastAPI, Python 3.10+
-- **AI/ML**: OpenAI API (GPT-4o-mini, Vision)
+- **Vector DB**: ChromaDB
+- **AI/LLM**: OpenAI API (GPT-4o-mini, text-embedding-ada-002)
 - **Data**: JSON 기반 데이터 저장
-- **Algorithm**: 코사인 유사도, L2 정규화, Sigmoid 스케일링
+
+## 환경 변수
+
+```bash
+# .env 파일
+OPENAI_API_KEY=sk-...              # OpenAI API 키 (필수)
+INSTAGRAM_ACCESS_TOKEN=...         # Instagram Graph API (선택)
+INSTAGRAM_BUSINESS_ACCOUNT_ID=...  # Instagram 비즈니스 계정 ID (선택)
+```
 
 ## 데이터 스키마
 
-### 인플루언서 (Processed)
+### 인플루언서
 
 ```json
 {
@@ -208,16 +232,11 @@ curl -X POST "http://localhost:8000/api/recommend-campaign" \
   "influencer_type": "expert",
   "followers": 85000,
   "bio": "청담동 헤어살롱 원장 | 15년차 미용사",
-  "analysis_strategy": {
-    "primary": "text",
-    "secondary": "image"
-  },
-  "text_analysis": { ... },
-  "image_analysis": { ... },
   "fis": {
     "score": 85.2,
     "verdict": "신뢰 계정"
-  }
+  },
+  "recent_posts": [...]
 }
 ```
 
@@ -227,8 +246,12 @@ curl -X POST "http://localhost:8000/api/recommend-campaign" \
 {
   "brand_name": "미쟝센",
   "aesthetic_style": "Trendy",
-  "product_type": "샴푸",
-  "marketing_approach": "consumer",
-  "core_values": ["트렌디", "스타일링"]
+  "slogan": "나만의 스타일을 완성하다",
+  "core_values": ["트렌디", "스타일링", "셀프케어"],
+  "price_tier": "Mid-range"
 }
 ```
+
+## 라이선스
+
+MIT License
