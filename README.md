@@ -471,6 +471,11 @@ INSTAGRAM_BUSINESS_ACCOUNT_ID=...    # Instagram 비즈니스 계정 ID
 - [IG User Business Discovery Reference](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/business_discovery)
 - [Hashtag Search API](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-hashtag-search)
 
+**참고 자료:**
+- [Instagram Graph API: Complete Developer Guide for 2025](https://elfsight.com/blog/instagram-graph-api-complete-developer-guide-for-2025/)
+- [APIs for Social Scientists: Instagram Graph API](https://paulcbauer.github.io/apis_for_social_scientists_a_review/instagram-graph-api.html)
+- [Get Instagram Users Data using Business Discovery](https://medium.com/@ritikkhndelwal/get-other-instagram-users-data-using-the-python-and-instagram-graph-api-business-discovery-807ba4a9ad91)
+
 ## 참고 문헌
 
 | # | 저자 | 제목 | 적용 |
