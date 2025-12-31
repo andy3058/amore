@@ -447,10 +447,13 @@ INSTAGRAM_BUSINESS_ACCOUNT_ID=...    # Instagram 비즈니스 계정 ID
 |---|------|------|------|
 | 1 | Golbeck (2015) | Benford's Law Applies to Online Social Networks | FIS - Benford 검정 |
 | 2 | Mazza et al. (2020) | Bot Detection using Benford's Law | FIS - 봇 탐지 |
-| 3 | Salton & McGill (1983) | Introduction to Modern Information Retrieval | 분류 - TF-IDF |
-| 4 | Manning et al. (2008) | Introduction to Information Retrieval | 분류 - Cosine Similarity |
-| 5 | Cormack et al. (2009) | Reciprocal Rank Fusion | RAG - RRF Scoring |
-| 6 | Järvelin & Kekäläinen (2002) | Cumulated Gain-Based Evaluation | 평가 - NDCG |
-| 7 | Iglewicz & Hoaglin (1993) | How to Detect and Handle Outliers | FIS - Modified Z-score |
+| 3 | Nigrini (2012) | Benford's Law | FIS - MAD 적합도 기준 |
+| 4 | Iglewicz & Hoaglin (1993) | How to Detect and Handle Outliers | FIS - Modified Z-score |
+| 5 | Jaccard (1901) | Distribution de la flore alpine | FIS - 중복 콘텐츠 탐지 |
+| 6 | Salton & McGill (1983) | Introduction to Modern Information Retrieval | 분류 - TF-IDF |
+| 7 | Manning et al. (2008) | Introduction to Information Retrieval | 분류 - Cosine Similarity |
 | 8 | Dietterich (2000) | Ensemble Methods in Machine Learning | 분류 - Soft Voting |
+| 9 | Cormack et al. (2009) | Reciprocal Rank Fusion | RAG - RRF Scoring |
+| 10 | Järvelin & Kekäläinen (2002) | Cumulated Gain-Based Evaluation | 평가 - NDCG |
+| 11 | Ziegler et al. (2005) | Improving Recommendation Lists Through Topic Diversification | 평가 - Intra-List Diversity |
 
