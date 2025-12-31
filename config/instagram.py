@@ -1,5 +1,18 @@
 """
 Instagram Graph API 설정
+=========================
+
+Instagram Graph API를 통한 인플루언서 데이터 수집 설정
+
+주요 설정:
+- API 버전: v21.0 (2025년 기준)
+- Rate Limit: 시간당 200회 호출
+- 해시태그 검색: 주당 30개 고유 해시태그
+
+환경 변수 (.env):
+- INSTAGRAM_ACCESS_TOKEN: Facebook Graph API 액세스 토큰
+- INSTAGRAM_BUSINESS_ACCOUNT_ID: Instagram 비즈니스 계정 ID
+- FACEBOOK_APP_SECRET: 토큰 갱신용 앱 시크릿 (선택)
 """
 import os
 from typing import Optional

@@ -2,10 +2,21 @@
 크롤러 모듈 - 브랜드 및 인플루언서 데이터 수집
 ==============================================
 
-1. BrandCrawler: 수동 입력된 브랜드 JSON 데이터 로드/관리
-2. InfluencerCrawler: Instagram Graph API 기반 인플루언서 데이터 수집
-   - 수집만 담당 (Expert/Trendsetter 구분 없이)
-   - 분류 및 분석 전략은 Processor에서 처리
+파이프라인 구조:
+    Crawlers (수집) → Processors (분석/분류) → RAG Analyzer (벡터 검색)
+
+모듈 구성:
+1. BrandCrawler
+   - 아모레퍼시픽 헤어 브랜드 JSON 데이터 관리
+   - 수동 입력된 브랜드 정보 로드/저장/검증
+
+2. InfluencerCrawler
+   - Instagram Graph API 기반 인플루언서 데이터 수집
+   - 해시태그 검색 → 프로필/게시물 수집 → 이미지 URL 수집
+   - 수집만 담당 (Expert/Trendsetter 분류는 Processor에서 처리)
+
+지원 브랜드 (6개):
+- 려, 미쟝센, 라보에이치, 아윤채, 아모스 프로페셔널, 롱테이크
 """
 
 import os

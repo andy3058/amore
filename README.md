@@ -1,31 +1,116 @@
 # AI 헤어 인플루언서 큐레이션 에이전트
 
-아모레퍼시픽 헤어 브랜드와 인플루언서 최적 매칭을 위한 RAG 기반 AI 추천 시스템
+아모레퍼시픽 헤어 브랜드와 인플루언서 최적 매칭을 위한 **학술적 알고리즘 기반** RAG AI 추천 시스템
 
-## 주요 기능
+## 핵심 특징
 
+- **학술적 알고리즘 기반**: 논문 검증된 알고리즘으로 신뢰성 높은 분석
 - **RAG 기반 추천**: ChromaDB 벡터 검색 + LLM 분석으로 정확한 인플루언서 매칭
-- **Expert/Trendsetter 분류**: 인플루언서 유형 자동 분류
-  - Expert: 미용사, 살롱 원장, 헤어 시술 전문가
-  - Trendsetter: 뷰티 인플루언서, 스타일 크리에이터
-- **FIS (Fake Integrity Score)**: 6가지 지표로 허수 계정 필터링
-- **다각화된 추천 사유**: 인플루언서 특성에 맞는 상세한 추천 이유 제공
-- **타겟 필터링**: 성별, 연령대 기반 정밀 필터링
+- **LLM 개인화 페르소나**: GPT-4o-mini로 인플루언서별 고유 페르소나 자동 생성
+- **Expert/Trendsetter 분류**: TF-IDF + Cosine Similarity 기반 자동 분류
+- **FIS (Fake Integrity Score)**: Benford's Law + Chi-squared Test 기반 허수 계정 탐지
+- **Hybrid Scoring**: RRF + Temperature Scaling으로 정밀한 순위 결정
+
+## 학술적 기반
+
+### 1. FIS (Fake Integrity Score) - 허수 계정 탐지
+
+| 알고리즘 | 학술 기반 | 적용 |
+|---------|----------|------|
+| **Benford's Law** | Golbeck (2015), PLOS ONE | 숫자 분포 기반 봇 탐지 |
+| **Chi-squared Test** | Pearson's Chi-squared | Benford 적합도 검정 |
+| **Modified Z-score** | Iglewicz & Hoaglin (1993) | 참여율 이상치 탐지 (MAD 기반) |
+| **Jaccard Similarity** | Jaccard (1901) | 중복 콘텐츠 탐지 |
+
+```
+FIS = Σ(wi × Si) × Geographic_Factor
+
+S_benford:    χ² 기반 Benford 법칙 적합도 (w=0.20)
+S_engagement: Modified Z-score 참여율 분석 (w=0.25)
+S_comment:    댓글 패턴 엔트로피 (w=0.15)
+S_activity:   CV(Coefficient of Variation) 활동 패턴 (w=0.15)
+S_duplicate:  Jaccard Similarity 중복 탐지 (w=0.15)
+S_geo:        지리적 정합성 (w=0.10)
+```
+
+### 2. Expert/Trendsetter 분류
+
+| 알고리즘 | 학술 기반 | 적용 |
+|---------|----------|------|
+| **TF-IDF** | Salton & McGill (1983) | 키워드 가중치 계산 |
+| **Cosine Similarity** | Manning et al. (2008) | 프로필 유사도 측정 |
+| **Soft Voting Ensemble** | Dietterich (2000) | 다중 신호 결합 |
+
+```
+Expert: 미용사, 살롱 원장, 헤어 시술 전문가
+  - 분석 전략: 텍스트 Primary (bio/caption 전문성 분석)
+  - 키워드: 원장, 미용사, 살롱, 시술, 펌, 염색, 클리닉
+
+Trendsetter: 스타일 크리에이터, 뷰티 인플루언서
+  - 분석 전략: 이미지 Primary (시각적 스타일 분석)
+  - 키워드: 크리에이터, 인플루언서, OOTD, 데일리룩
+```
+
+### 3. RAG 검색 + Hybrid Scoring
+
+| 알고리즘 | 학술 기반 | 적용 |
+|---------|----------|------|
+| **RRF** | Cormack et al. (2009) | 순위 기반 점수 융합 |
+| **Temperature Scaling** | Hinton et al. | 점수 분포 캘리브레이션 |
+| **NDCG** | Järvelin & Kekäläinen (2002) | 추천 품질 평가 |
+
+```
+Hybrid Score = α×Vector + β×FIS + γ×RRF
+
+α = 0.50 (벡터 유사도)
+β = 0.25 (FIS 신뢰도)
+γ = 0.25 (RRF 순위 점수)
+k = 60 (RRF 상수, 논문 권장값)
+```
+
+### 4. LLM 개인화 페르소나 생성
+
+- **GPT-4o-mini** 기반 인플루언서별 고유 페르소나 자동 생성
+- RAG 인덱싱 시 사전 생성 + 캐싱 (실시간 API 비용 절감)
+- 다양성 확보: temperature=0.8로 창의적 페르소나 생성
+
+```
+Expert 예시: "청담 컬러 마스터", "손상모 복구의 정석", "볼륨펌의 달인"
+Trendsetter 예시: "오피스룩의 정석", "캠퍼스 스타일 아이콘", "데일리 뷰티 크리에이터"
+```
 
 ## 시스템 아키텍처
 
 ```
-Crawler → Processor → RAG Analyzer → API
-   ↓          ↓            ↓           ↓
- 수집     분류/FIS    벡터 인덱싱    추천
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│  Crawlers   │───▶│ Processors  │───▶│RAG Analyzer │───▶│  API/UI     │
+│   (수집)    │    │ (분석/분류) │    │ (벡터 검색) │    │  (추천)     │
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+       │                  │                  │                  │
+       ▼                  ▼                  ▼                  ▼
+  Instagram API     FIS Calculator      ChromaDB          FastAPI
+  Brand JSON        TF-IDF Classifier   OpenAI Embed      Swagger UI
+                    Image Analyzer      LLM Persona
 ```
 
-### RAG 파이프라인
+### 파이프라인 상세
 
-1. **인덱싱**: LLM Vision으로 인플루언서 이미지 분석 → ChromaDB에 벡터 저장
-2. **검색**: 브랜드+제품+캠페인 설명으로 쿼리 생성 → 유사도 검색
-3. **필터링**: 성별/연령대/FIS 기준 필터링
-4. **추천**: 상세한 추천 사유와 함께 결과 반환
+1. **인덱싱 (서버 시작 시)**
+   - LLM Vision으로 인플루언서 이미지 분석
+   - GPT-4o-mini로 개인화 페르소나 생성 (캐싱)
+   - ChromaDB에 임베딩 벡터 저장
+
+2. **검색 (추천 요청 시)**
+   - 브랜드+제품+캠페인 설명으로 쿼리 생성
+   - Multi-Signal Hybrid Scoring (Vector + FIS + RRF)
+   - Temperature Scaling으로 점수 분포 조정
+
+3. **필터링**
+   - Expert: 연령 필터 없음 (모든 연령 시술)
+   - Trendsetter: 성별/연령대 엄격 필터 (광고 모델 역할)
+
+4. **추천**
+   - LLM 페르소나 + 상세 추천 사유 함께 반환
 
 ## 빠른 시작
 
@@ -57,10 +142,10 @@ amore/
 ├── server.py              # 메인 서버 (FastAPI)
 ├── run.sh / stop.sh       # 실행/종료 스크립트
 ├── requirements.txt       # 의존성
-├── .env.example           # 환경변수 예시
+├── .env                   # 환경변수 (OPENAI_API_KEY)
 │
 ├── api/                   # API 라우터
-│   └── routes.py          # 엔드포인트 정의
+│   └── routes.py          # 엔드포인트 정의 + 추천 로직
 │
 ├── pipeline/              # 핵심 파이프라인 모듈
 │   ├── __init__.py        # 모듈 초기화
@@ -69,15 +154,14 @@ amore/
 │   │   ├── BrandCrawler       # 브랜드 JSON 관리
 │   │   └── InfluencerCrawler  # Instagram Graph API 수집
 │   │
-│   ├── processors.py      # 데이터 처리
-│   │   ├── InfluencerProcessor  # 메인 처리 파이프라인
-│   │   ├── FISCalculator        # 허수 계정 탐지 (6지표)
-│   │   ├── InfluencerClassifier # Expert/Trendsetter 분류
-│   │   └── ImageAnalyzer        # LLM 비전 이미지 분석
+│   ├── processors.py      # 학술적 알고리즘 기반 처리
+│   │   ├── FISCalculator        # Benford + Chi-squared 허수 탐지
+│   │   ├── InfluencerClassifier # TF-IDF + Cosine 분류
+│   │   └── RecommendationEvaluator # NDCG + Diversity 평가
 │   │
 │   └── rag_analyzer.py    # RAG 시스템 (핵심)
-│       ├── InfluencerImageAnalyzer  # LLM Vision 이미지 분석
-│       ├── InfluencerRAG            # ChromaDB 벡터 검색
+│       ├── InfluencerImageAnalyzer  # LLM Vision 분석 + 페르소나 생성
+│       ├── InfluencerRAG            # ChromaDB + Hybrid Scoring
 │       └── InfluencerAnalysisManager # 통합 관리자
 │
 ├── config/                # 설정
@@ -86,8 +170,8 @@ amore/
 │
 ├── data/                  # 데이터
 │   ├── influencers_data.json  # 인플루언서 데이터 (300명)
-│   ├── amore_brands.json      # 아모레퍼시픽 헤어 브랜드
-│   └── influencer_rag/        # ChromaDB 인덱스 (자동 생성)
+│   ├── amore_brands.json      # 아모레퍼시픽 헤어 브랜드 (6개)
+│   └── rag_index/             # ChromaDB 인덱스 (자동 생성)
 │
 ├── scripts/               # 유틸리티 스크립트
 │   └── generate_sample_data.py  # 샘플 데이터 생성
@@ -96,60 +180,43 @@ amore/
     └── index.html
 ```
 
-## 핵심 알고리즘
-
-### 1. Expert/Trendsetter 분류
-
-```
-Expert: 미용사, 살롱 원장, 시술 전문가
-  - 키워드: 원장, 미용사, 살롱, 시술, 펌, 염색 등
-  - 분석 전략: 텍스트 Primary (bio/caption 분석)
-
-Trendsetter: 스타일 크리에이터, 뷰티 인플루언서
-  - 키워드: 크리에이터, 인플루언서, OOTD, 데일리룩 등
-  - 분석 전략: 이미지 Primary (시각적 스타일 분석)
-```
-
-### 2. FIS (Fake Integrity Score)
-
-```
-FIS = (w1×V + w2×A + w3×E + w4×ACS + w5×DUP) × D/100
-
-V:   조회수 변동성 (CV) - 뷰봇 탐지
-A:   참여 비대칭성 (좋아요/조회수) - 좋아요 구매 탐지
-E:   댓글 엔트로피 (댓글/조회수) - 봇 댓글 탐지
-ACS: 활동 안정성 (업로드 간격)
-D:   지리적 정합성 (한국 타겟)
-DUP: 중복 콘텐츠 비율
-
-가중치: V=0.20, A=0.25, E=0.15, ACS=0.10, D=0.15, DUP=0.15
-점수 기준: 80+ 신뢰 계정, 60-79 주의 필요, 60 미만 허수 의심
-```
-
-### 3. RAG 벡터 검색
-
-- **임베딩**: OpenAI text-embedding-ada-002
-- **벡터 DB**: ChromaDB (로컬 저장)
-- **메타데이터 필터링**: influencer_type, target_gender, fis_score
-- **유사도**: 코사인 유사도 기반 검색
-
 ## API 엔드포인트
 
 ### 추천 API
 
 | 메서드 | 엔드포인트 | 설명 |
 |--------|-----------|------|
-| POST | `/api/recommend` | 인플루언서 추천 (RAG 기반) |
+| POST | `/api/recommend` | 인플루언서 추천 (RAG + Hybrid Scoring) |
 
 **요청 예시:**
 ```json
 {
-  "brand_name": "려",
-  "product_type": "탈모케어 샴푸",
+  "brand_name": "라보에이치",
+  "product_line": "두피케어",
   "description": "30,40대 여성 대상 탈모 예방 캠페인",
   "target_gender": "female",
   "expert_count": 2,
   "trendsetter_count": 3
+}
+```
+
+**응답 예시:**
+```json
+{
+  "brand_info": { "name": "라보에이치", ... },
+  "recommendations": [
+    {
+      "username": "hair_master_kim",
+      "match_score": 96.5,
+      "rag_profile": {
+        "llm_persona": "두피 솔루션 전문가",
+        "persona": "두피 솔루션 전문가 | 신뢰감 있는",
+        "influencer_type": "expert",
+        "fis_score": 92.3
+      },
+      "match_reason": "두피케어 튜토리얼 콘텐츠로 높은 인기를 얻고 있는 전문가입니다..."
+    }
+  ]
 }
 ```
 
@@ -208,10 +275,13 @@ DUP: 중복 콘텐츠 비율
 
 ## 기술 스택
 
-- **Backend**: FastAPI, Python 3.10+
-- **Vector DB**: ChromaDB
-- **AI/LLM**: OpenAI API (GPT-4o-mini, text-embedding-ada-002)
-- **Data**: JSON 기반 데이터 저장
+| 분류 | 기술 |
+|-----|------|
+| **Backend** | FastAPI, Python 3.10+ |
+| **Vector DB** | ChromaDB |
+| **AI/LLM** | OpenAI API (GPT-4o-mini, text-embedding-ada-002) |
+| **알고리즘** | Benford's Law, TF-IDF, RRF, Temperature Scaling |
+| **Data** | JSON 기반 데이터 저장 |
 
 ## 환경 변수
 
@@ -234,9 +304,21 @@ INSTAGRAM_BUSINESS_ACCOUNT_ID=...  # Instagram 비즈니스 계정 ID (선택)
   "bio": "청담동 헤어살롱 원장 | 15년차 미용사",
   "fis": {
     "score": 85.2,
-    "verdict": "신뢰 계정"
+    "verdict": "신뢰 계정 (A등급)",
+    "breakdown": {
+      "benford_conformity": 92.5,
+      "engagement_authenticity": 88.3,
+      "comment_pattern": 75.2,
+      "activity_regularity": 85.0,
+      "geographic_consistency": 80.0,
+      "content_originality": 90.1
+    }
   },
-  "recent_posts": [...]
+  "rag_profile": {
+    "llm_persona": "청담 컬러 마스터",
+    "main_mood": "세련된",
+    "content_type": "전후비교"
+  }
 }
 ```
 
@@ -244,13 +326,24 @@ INSTAGRAM_BUSINESS_ACCOUNT_ID=...  # Instagram 비즈니스 계정 ID (선택)
 
 ```json
 {
-  "brand_name": "미쟝센",
-  "aesthetic_style": "Trendy",
-  "slogan": "나만의 스타일을 완성하다",
-  "core_values": ["트렌디", "스타일링", "셀프케어"],
+  "brand_name": "라보에이치",
+  "aesthetic_style": "Natural",
+  "slogan": "두피 스킨케어의 새로운 기준",
+  "core_values": ["전문성", "혁신", "자연주의", "효과성", "신뢰성", "지속 가능성"],
   "price_tier": "Mid-range"
 }
 ```
+
+## 참고 문헌
+
+1. Golbeck, J. (2015). "Benford's Law Applies to Online Social Networks" PLOS ONE
+2. Mazza et al. (2020). "Bot Detection using Benford's Law" ACM SIN
+3. Salton & McGill (1983). "Introduction to Modern Information Retrieval"
+4. Manning et al. (2008). "Introduction to Information Retrieval"
+5. Cormack et al. (2009). "Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods"
+6. Järvelin & Kekäläinen (2002). "Cumulated Gain-Based Evaluation of IR Techniques"
+7. Iglewicz & Hoaglin (1993). "How to Detect and Handle Outliers"
+8. Dietterich (2000). "Ensemble Methods in Machine Learning"
 
 ## 라이선스
 

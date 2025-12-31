@@ -132,6 +132,9 @@ async def recommend_influencers(request: RecommendRequest):
             'total_results': 0
         }
 
+    # 검색 배수 설정 (필터링 손실을 고려하여 넉넉하게)
+    SEARCH_MULTIPLIER = 5
+
     # 전문가 검색
     expert_results = []
     if expert_count > 0:
@@ -141,7 +144,7 @@ async def recommend_influencers(request: RecommendRequest):
             campaign_description=request.description,
             target_gender=request.target_gender,
             influencer_type='expert',
-            top_k=expert_count * 3  # 성별 필터링을 위해 여유있게
+            top_k=expert_count * SEARCH_MULTIPLIER
         )
 
     # 트렌드세터 검색
@@ -153,32 +156,58 @@ async def recommend_influencers(request: RecommendRequest):
             campaign_description=request.description,
             target_gender=request.target_gender,
             influencer_type='trendsetter',
-            top_k=trendsetter_count * 3
+            top_k=trendsetter_count * SEARCH_MULTIPLIER
         )
 
-    # 성별 필터링 적용
-    def filter_by_gender(results, target_gender):
+    # ============================================================
+    # 마케팅 관점 필터링 로직
+    # ============================================================
+    #
+    # 전문가(Expert): 미용사, 원장님
+    # - 모든 연령대 고객을 시술하므로 연령 필터링 불필요
+    # - 성별도 대부분 여성/남성 모두 시술 가능
+    # - 중요한 건: 전문성, FIS 점수, 시술 결과 퀄리티
+    #
+    # 트렌드세터(Trendsetter): 일반 인플루언서
+    # - 본인이 직접 광고 모델이 됨 → 타겟 고객과 동일한 페르소나 필수
+    # - 30대 타겟 제품 → 30대 인플루언서 (공감대 형성)
+    # - 성별도 타겟과 일치해야 함 (여성 제품 → 여성 인플루언서)
+    # ============================================================
+
+    def filter_by_gender(results, target_gender, strict=False):
+        """
+        성별 필터링
+
+        Args:
+            strict: True면 정확히 일치해야 함 (트렌드세터용)
+                   False면 반대 성별만 제외 (전문가용)
+        """
         if not target_gender or target_gender == 'unisex':
             return results
 
         filtered = []
         for r in results:
             inf_gender = r.get('metadata', {}).get('target_gender', 'unisex')
-            # 여성 타겟이면 남성 전용 제외, 남성 타겟이면 여성 전용 제외
-            if target_gender == 'female' and inf_gender == 'male':
-                continue
-            if target_gender == 'male' and inf_gender == 'female':
-                continue
-            filtered.append(r)
+
+            if strict:
+                # 트렌드세터: 타겟과 정확히 일치하거나 unisex여야 함
+                if inf_gender == target_gender or inf_gender == 'unisex':
+                    filtered.append(r)
+            else:
+                # 전문가: 반대 성별 전용만 제외
+                if target_gender == 'female' and inf_gender == 'male':
+                    continue
+                if target_gender == 'male' and inf_gender == 'female':
+                    continue
+                filtered.append(r)
+
         return filtered
 
-    # 연령대 필터링 적용
     def extract_target_ages(description):
         """설명에서 타겟 연령대 추출 (예: 30,40대 -> [30, 40])"""
         if not description:
             return []
         import re
-        # 다양한 패턴 매칭: 30,40대 / 30대, 40대 / 30-40대 / 30대
         ages = []
         # 30,40대 패턴
         match = re.search(r'(\d{2})[,\s]*(\d{2})대', description)
@@ -190,37 +219,91 @@ async def recommend_influencers(request: RecommendRequest):
             ages = [int(m) for m in matches]
         return ages
 
-    def filter_by_age(results, description):
-        """타겟 연령대에 맞는 인플루언서만 필터링 (엄격하게)"""
+    def filter_trendsetter_by_age(results, description):
+        """
+        트렌드세터 연령대 필터링 (마케팅 관점)
+
+        트렌드세터는 본인이 광고 모델이므로:
+        - 타겟 연령대와 정확히 일치하는 인플루언서가 최우선
+        - 인접 연령대(±10년)는 차선책
+        - 연령대 정보 없는 경우는 최후순위
+
+        반환: (정확일치, 인접연령, 미상) 순으로 정렬된 리스트
+        """
         target_ages = extract_target_ages(description)
         if not target_ages:
-            return results
+            return results  # 타겟 연령 미지정시 필터 안함
 
-        filtered = []
+        exact_match = []      # 정확히 일치 (30대 타겟 → 30대 인플루언서)
+        adjacent_match = []   # 인접 연령대 (30대 타겟 → 20대, 40대)
+        unknown_age = []      # 연령대 정보 없음
+
         for r in results:
             inf_age_str = r.get('metadata', {}).get('target_age', '')
+
             if not inf_age_str:
-                # 연령대 정보 없으면 제외
+                unknown_age.append(r)
                 continue
 
-            # 인플루언서 타겟 연령대 추출 (예: "30대" -> 30)
             import re
             inf_age_match = re.search(r'(\d{2})', inf_age_str)
-            if inf_age_match:
-                inf_age = int(inf_age_match.group(1))
-                # 타겟 연령대와 정확히 일치해야 함
-                # 30,40대 타겟이면 30대 또는 40대 인플루언서만 OK
-                if inf_age in target_ages:
-                    filtered.append(r)
-            # 파싱 실패시 제외
+            if not inf_age_match:
+                unknown_age.append(r)
+                continue
 
-        return filtered  # 연령대가 맞지 않으면 빈 리스트 반환 (잘못된 추천보다 적은 추천이 나음)
+            inf_age = int(inf_age_match.group(1))
 
-    # 전문가: 성별만 필터링 (연령대는 시술 대상이므로 필터링 불필요)
-    expert_results = filter_by_gender(expert_results, request.target_gender)[:expert_count]
-    # 트렌드세터: 성별 + 연령대 필터링 (본인이 직접 광고하므로 타겟 연령대 일치 필요)
-    trendsetter_results = filter_by_gender(trendsetter_results, request.target_gender)
-    trendsetter_results = filter_by_age(trendsetter_results, request.description)[:trendsetter_count]
+            # 정확히 일치
+            if inf_age in target_ages:
+                exact_match.append(r)
+            # 인접 연령대 (±10년 이내)
+            elif any(abs(inf_age - t) <= 10 for t in target_ages):
+                adjacent_match.append(r)
+            # 그 외는 제외 (너무 동떨어진 연령대)
+
+        # 우선순위: 정확일치 > 인접연령 > 미상
+        return exact_match + adjacent_match + unknown_age
+
+    def ensure_count(results, target_count, fallback_results):
+        """
+        목표 인원수 보장
+        부족하면 fallback_results에서 중복 없이 추가
+        """
+        if len(results) >= target_count:
+            return results[:target_count]
+
+        existing_usernames = {r['username'] for r in results}
+        for r in fallback_results:
+            if r['username'] not in existing_usernames:
+                results.append(r)
+                existing_usernames.add(r['username'])
+                if len(results) >= target_count:
+                    break
+
+        return results[:target_count]
+
+    # ============================================================
+    # 전문가 필터링
+    # ============================================================
+    # - 연령대 필터 없음 (모든 연령 고객 시술 가능)
+    # - 성별 필터도 느슨하게 (반대 성별 '전용'만 제외)
+    expert_filtered = filter_by_gender(expert_results, request.target_gender, strict=False)
+    expert_results = ensure_count(expert_filtered, expert_count, expert_results)
+
+    # ============================================================
+    # 트렌드세터 필터링 (엄격)
+    # ============================================================
+    # - 성별 필터 엄격 (타겟과 일치하거나 unisex만)
+    # - 연령대 필터 적용 (정확일치 > 인접 > 미상 순)
+    trendsetter_gender_filtered = filter_by_gender(
+        trendsetter_results, request.target_gender, strict=True
+    )
+    trendsetter_age_filtered = filter_trendsetter_by_age(
+        trendsetter_gender_filtered, request.description
+    )
+    trendsetter_results = ensure_count(
+        trendsetter_age_filtered, trendsetter_count, trendsetter_gender_filtered
+    )
 
     # 결과 병합 및 응답 구성
     all_results = expert_results + trendsetter_results
@@ -234,36 +317,121 @@ async def recommend_influencers(request: RecommendRequest):
         metadata = r.get('metadata', {})
         inf_type = metadata.get('influencer_type', 'trendsetter')
 
-        # 매칭 점수 스케일 조정
-        raw_score = r.get('score', 0.5)
-        match_score = min(98, max(65, 65 + raw_score * 40))
+        # 매칭 점수 스케일 조정 (Multi-Signal Hybrid Scoring 기반)
+        #
+        # 학술적 기반:
+        # - Reciprocal Rank Fusion (RRF): 순위 기반 점수 융합
+        # - Temperature Scaling: 점수 분포 캘리브레이션
+        # - Min-Max Normalization: 정규화로 스케일 조정
+        #
+        # 점수 범위: 55% ~ 98% (43%p 범위)
+        # - 기존: 65% ~ 98% (33%p) → 새 방식: 더 넓은 분포
+        #
+        raw_score = r.get('score', 0.5)  # Temperature Scaled score
+        hybrid_score = r.get('hybrid_score', raw_score)  # 원본 Hybrid score
 
-        # persona 간결하게 생성
+        # 최종 점수 = 55 + hybrid_score * 43
+        # hybrid_score 범위가 0~1이므로 결과는 55~98%
+        match_score = min(98, max(55, 55 + hybrid_score * 43))
+
+        # persona 생성 (LLM 페르소나 우선 사용)
         rag_profile = metadata.copy()
         if 'persona' in rag_profile:
             content_type = metadata.get('content_type', '')
             main_mood = metadata.get('main_mood', '')
             target_age = metadata.get('target_age', '')
 
-            # 콘텐츠 타입 한글화
-            content_map = {
-                '시술결과': '시술 결과',
-                '전후비교': 'B&A',
-                '헤어팁': '헤어팁',
-                '튜토리얼': '튜토리얼',
-                '일상브이로그': '일상 브이로그',
-                '뷰티리뷰': '뷰티 리뷰'
-            }
-            content_desc = content_map.get(content_type, content_type)
-
-            # 간결한 페르소나 생성
-            if inf_type == 'expert':
-                # 전문가: "염색/펌 전문 | 고급스러운 B&A"
-                specialty = metadata.get('best_categories', '').split(',')[0].split('-')[0] if metadata.get('best_categories') else '헤어'
-                rag_profile['persona'] = f"{specialty} 전문 | {main_mood} {content_desc}"
+            # LLM 생성 페르소나가 있으면 우선 사용
+            llm_persona = metadata.get('llm_persona', '')
+            if llm_persona:
+                # LLM 페르소나 사용 (예: "청담 컬러 마스터", "데일리 뷰티 크리에이터")
+                rag_profile['persona'] = f"{llm_persona} | {main_mood}"
             else:
-                # 트렌드세터: "20대 여성 | 트렌디한 일상 브이로그"
-                rag_profile['persona'] = f"{target_age} 타겟 | {main_mood} {content_desc}"
+                # 폴백: 기존 규칙 기반 페르소나 생성
+                # 콘텐츠 타입 한글화
+                content_map = {
+                    '시술결과': '시술 결과',
+                    '전후비교': 'B&A',
+                    '헤어팁': '헤어팁',
+                    '튜토리얼': '튜토리얼',
+                    '일상브이로그': '일상 브이로그',
+                    '뷰티리뷰': '뷰티 리뷰'
+                }
+                content_desc = content_map.get(content_type, content_type)
+
+                # 복합형 페르소나 생성: 시술 특화 + 콘텐츠 유형
+                # 예시: "손상모 B&A 전문가", "염색 튜토리얼 전문가", "볼륨펌 시술 전문가"
+                if inf_type == 'expert':
+                    # 전문가: best_categories에서 세부 특화 분야 추출 + content_type 조합
+                    # best_categories 예시: "트리트먼트-손상복구, 에센스-윤기"
+                    best_cat = metadata.get('best_categories', '')
+
+                    # 세부 특화 분야 추출 (대분류-세부분류에서 세부분류 우선)
+                    specialty = ''
+                    if best_cat:
+                        first_item = best_cat.split(',')[0].strip()
+                        if '-' in first_item:
+                            # "트리트먼트-손상복구" → "손상복구"
+                            parts = first_item.split('-')
+                            specialty = parts[1].strip() if len(parts) > 1 else parts[0].strip()
+                        else:
+                            specialty = first_item
+
+                    # 세부 분야 한글 표시 정리
+                    specialty_display_map = {
+                        # 케어 관련
+                        '손상복구': '손상모 복구',
+                        '손상모': '손상모 케어',
+                        '손상케어': '손상모 케어',
+                        '윤기': '윤기 케어',
+                        '두피': '두피 케어',
+                        '두피케어': '두피 케어',
+                        '볼륨': '볼륨',
+                        '탈모': '탈모 케어',
+                        '보습': '보습 케어',
+
+                        # 컬러 관련
+                        '발레아쥬': '발레아쥬',
+                        '하이라이트': '하이라이트',
+                        '옴브레': '옴브레',
+                        '블리치': '탈색',
+                        '염색': '염색',
+                        '탈색': '탈색',
+
+                        # 스타일링 관련
+                        '볼륨펌': '볼륨펌',
+                        '웨이브': '웨이브펌',
+                        '셋팅': '셋팅',
+                        '드라이': '드라이 스타일링',
+                        '커트': '커트',
+                        '컷': '커트',
+
+                        # 전문 분야
+                        '전문가용': '프로페셔널',
+                        '살롱급': '살롱 스타일',
+                    }
+
+                    # 콘텐츠 타입 → 전문가 유형 매핑
+                    content_type_map = {
+                        '전후비교': 'B&A',
+                        '시술결과': '시술',
+                        '튜토리얼': '튜토리얼',
+                        '헤어팁': '팁',
+                        '뷰티리뷰': '리뷰',
+                        '일상브이로그': '브이로그',
+                    }
+
+                    specialty_display = specialty_display_map.get(specialty, specialty)
+                    content_suffix = content_type_map.get(content_type, '시술')
+
+                    if specialty_display:
+                        # "손상모 복구 B&A 전문가", "발레아쥬 시술 전문가"
+                        rag_profile['persona'] = f"{specialty_display} {content_suffix} 전문가 | {main_mood}"
+                    else:
+                        rag_profile['persona'] = f"헤어 {content_suffix} 전문가 | {main_mood}"
+                else:
+                    # 트렌드세터: "20대 여성 | 트렌디한 일상 브이로그"
+                    rag_profile['persona'] = f"{target_age} 타겟 | {main_mood} {content_desc}"
 
         recommendations.append({
             'username': username,

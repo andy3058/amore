@@ -24,7 +24,9 @@ from pathlib import Path
 
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    # 프로젝트 루트의 .env 파일 명시적 로드
+    _env_path = Path(__file__).parent.parent / ".env"
+    load_dotenv(_env_path)
 except ImportError:
     pass
 
@@ -124,6 +126,49 @@ PROFILE_SUMMARY_PROMPT = """다음은 인플루언서의 이미지 분석 결과
 - 어떤 브랜드/제품에 적합한지, 어떤 캠페인에 활용하면 좋은지 포함
 
 요약문만 출력하세요 (JSON 아님):"""
+
+
+# ============================================================
+# LLM 기반 개인화된 페르소나 생성 프롬프트
+# ============================================================
+
+PERSONA_GENERATION_PROMPT = """당신은 인플루언서 마케팅 전문가입니다.
+아래 인플루언서 정보를 바탕으로 짧고 직관적인 페르소나를 생성하세요.
+
+**인플루언서 정보:**
+- 이름: {username}
+- 유형: {influencer_type}
+- 바이오: {bio}
+- 팔로워: {followers:,}명
+- 주요 분위기: {main_mood}
+- 콘텐츠 유형: {content_type}
+- 전문 분야: {best_categories}
+- 타겟 연령대: {target_age}
+- 타겟 성별: {target_gender}
+
+**페르소나 생성 규칙:**
+1. 10~20자 이내의 짧고 임팩트 있는 문구
+2. 이 인플루언서만의 고유한 특징을 담아야 함
+3. 마케터가 한눈에 파악할 수 있어야 함
+4. 비슷한 페르소나가 반복되지 않도록 창의적으로
+
+**Expert 예시:**
+- "청담 컬러 마스터"
+- "손상모 복구의 정석"
+- "볼륨펌의 달인"
+- "두피 솔루션 전문가"
+- "웨딩헤어 아티스트"
+- "남성 커트 스페셜리스트"
+
+**Trendsetter 예시:**
+- "오피스룩의 정석"
+- "캠퍼스 스타일 아이콘"
+- "데일리 뷰티 크리에이터"
+- "미니멀 라이프 러버"
+- "트렌디한 MZ 직장인"
+- "셀프케어 마니아"
+
+페르소나만 출력하세요 (따옴표 없이):"""
 
 
 # ============================================================
@@ -250,6 +295,158 @@ class InfluencerImageAnalyzer:
 
         return summary
 
+    def generate_persona_with_llm(self, influencer: Dict, analysis: Dict) -> str:
+        """
+        LLM을 사용하여 개인화된 페르소나 생성
+
+        Args:
+            influencer: 인플루언서 기본 정보
+            analysis: 분석 결과 (content_characteristics, product_fit 등)
+
+        Returns:
+            개인화된 페르소나 문자열 (예: "청담 컬러 마스터", "데일리 뷰티 크리에이터")
+        """
+        if not OPENAI_AVAILABLE or not self.api_key:
+            return self._generate_persona_fallback(influencer, analysis)
+
+        try:
+            client = openai.OpenAI(api_key=self.api_key)
+
+            # 프롬프트 데이터 준비
+            content_chars = analysis.get('content_characteristics', {})
+            product_fit = analysis.get('product_fit', {})
+            target_audience = analysis.get('target_audience', {})
+
+            prompt_data = {
+                'username': influencer.get('username', ''),
+                'influencer_type': analysis.get('influencer_type', 'trendsetter'),
+                'bio': influencer.get('bio', '')[:200],
+                'followers': influencer.get('followers', 0),
+                'main_mood': content_chars.get('main_mood', ''),
+                'content_type': content_chars.get('content_type', ''),
+                'best_categories': ', '.join(product_fit.get('best_categories', [])),
+                'target_age': target_audience.get('age_range', ''),
+                'target_gender': target_audience.get('primary_gender', '')
+            }
+
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "당신은 인플루언서 마케팅 전문가입니다. 짧고 임팩트 있는 페르소나를 생성합니다."},
+                    {"role": "user", "content": PERSONA_GENERATION_PROMPT.format(**prompt_data)}
+                ],
+                max_tokens=50,
+                temperature=0.8  # 다양성을 위해 높은 temperature
+            )
+
+            persona = response.choices[0].message.content.strip()
+            # 따옴표 제거
+            persona = persona.strip('"\'')
+            return persona
+
+        except Exception as e:
+            print(f"LLM 페르소나 생성 실패 ({influencer.get('username', '')}): {e}")
+            return self._generate_persona_fallback(influencer, analysis)
+
+    def _generate_persona_fallback(self, influencer: Dict, analysis: Dict) -> str:
+        """LLM 없을 때 규칙 기반 페르소나 생성 (다양성 강화)"""
+        username = influencer.get('username', '')
+        bio = influencer.get('bio', '')
+        inf_type = analysis.get('influencer_type', 'trendsetter')
+        hash_val = int(hashlib.md5(f"{username}{bio}".encode()).hexdigest(), 16)
+
+        content_chars = analysis.get('content_characteristics', {})
+        product_fit = analysis.get('product_fit', {})
+        target_audience = analysis.get('target_audience', {})
+
+        main_mood = content_chars.get('main_mood', '')
+        content_type = content_chars.get('content_type', '')
+        best_cats = product_fit.get('best_categories', [])
+        age_range = target_audience.get('age_range', '')
+
+        if inf_type == 'expert':
+            # Expert 페르소나 템플릿 (다양한 조합)
+            prefixes = ['청담', '강남', '살롱', '프로', '시그니처']
+            specialties = {
+                '손상복구': ['손상모 복구의 정석', '손상케어 마스터', '모발 복구 전문가'],
+                '염색': ['컬러 마스터', '컬러리스트', '염색 아티스트'],
+                '펌': ['펌의 달인', '볼륨 스페셜리스트', '웨이브 마스터'],
+                '두피': ['두피 솔루션 전문가', '스칼프 케어 전문가', '두피 클리닉 마스터'],
+                '커트': ['커트 장인', '스타일 디렉터', '헤어 아키텍트'],
+                '클리닉': ['헤어 클리닉 전문가', '살롱 케어 마스터', '프로 클리니션'],
+                '스타일링': ['스타일링 마스터', '헤어 아티스트', '스타일 크리에이터']
+            }
+
+            # best_categories에서 특화 분야 추출
+            specialty_key = ''
+            if best_cats:
+                first_cat = best_cats[0].split('-')[-1] if '-' in best_cats[0] else best_cats[0]
+                for key in specialties:
+                    if key in first_cat or key in bio:
+                        specialty_key = key
+                        break
+
+            if specialty_key and specialty_key in specialties:
+                options = specialties[specialty_key]
+                persona = options[hash_val % len(options)]
+            else:
+                # 기본 Expert 페르소나
+                prefix = prefixes[hash_val % len(prefixes)]
+                suffix_options = ['헤어 마스터', '시술 전문가', '뷰티 디렉터', '헤어 아티스트']
+                persona = f"{prefix} {suffix_options[hash_val % len(suffix_options)]}"
+
+        else:
+            # Trendsetter 페르소나 템플릿 (다양한 조합)
+            lifestyle_personas = {
+                '직장인': ['오피스룩의 정석', '워킹우먼 스타일리스트', '퇴근 후 뷰티러'],
+                '대학생': ['캠퍼스 스타일 아이콘', 'MZ 뷰티 크리에이터', '트렌드 선도자'],
+                '프리랜서': ['자유로운 영혼의 뷰티러', '라이프스타일 큐레이터', '힙한 셀프케어러'],
+                '크리에이터': ['뷰티 콘텐츠 마스터', '스타일 인플루언서', '트렌드 크리에이터'],
+                '주부': ['홈케어 전문가', '엄마의 뷰티 시크릿', '데일리 셀프케어러']
+            }
+
+            mood_personas = {
+                '세련된': ['시크한 도시 여성', '모던 뷰티 아이콘', '세련미의 정석'],
+                '자연스러운': ['내추럴 뷰티 러버', '자연주의 스타일러', '청초한 뷰티 메이트'],
+                '미니멀': ['미니멀 라이프 러버', '심플 뷰티 마스터', '정제된 스타일리스트'],
+                '고급스러운': ['럭셔리 뷰티 퀸', '프리미엄 라이프러', '우아한 셀프케어러'],
+                '캐주얼': ['데일리 뷰티 친구', '편안한 일상 스타일러', '캐주얼 뷰티 메이트']
+            }
+
+            age_personas = {
+                '20대 초반': ['Z세대 트렌드세터', 'MZ 스타일 아이콘', '영 뷰티 리더'],
+                '20대': ['밀레니얼 뷰티러', '트렌디한 20대', '영앤핫 스타일러'],
+                '30대': ['서른의 우아함', '성숙한 뷰티 러버', '30대 스타일 멘토'],
+                'MZ세대': ['MZ 뷰티 크리에이터', '디지털 네이티브 스타일러', '트렌드 선도자']
+            }
+
+            # 우선순위: 무드 > 라이프스타일 > 연령대
+            lifestyle = target_audience.get('lifestyle', '')
+            persona = None
+
+            if main_mood and main_mood in mood_personas:
+                options = mood_personas[main_mood]
+                persona = options[hash_val % len(options)]
+            elif lifestyle and lifestyle in lifestyle_personas:
+                options = lifestyle_personas[lifestyle]
+                persona = options[hash_val % len(options)]
+            elif age_range:
+                for age_key in age_personas:
+                    if age_key in age_range:
+                        options = age_personas[age_key]
+                        persona = options[hash_val % len(options)]
+                        break
+
+            if not persona:
+                # 기본 Trendsetter 페르소나
+                default_options = [
+                    '데일리 뷰티 크리에이터', '스타일 인플루언서', '트렌드 메이커',
+                    '셀프케어 마니아', '뷰티 라이프 러버', '스타일 큐레이터'
+                ]
+                persona = default_options[hash_val % len(default_options)]
+
+        return persona
+
     def _simulate_analysis(self, username: str, influencer: Dict) -> Dict:
         """시뮬레이션 분석 (API 없을 때) - Expert/Trendsetter 분류 반영"""
         bio = influencer.get('bio', '')
@@ -357,6 +554,10 @@ class InfluencerImageAnalyzer:
         }
 
         analysis['profile_summary'] = self._generate_summary_fallback(analysis)
+
+        # LLM 기반 개인화된 페르소나 생성 (캐싱용)
+        analysis['llm_persona'] = self.generate_persona_with_llm(influencer, analysis)
+
         return analysis
 
     def _simulate_trendsetter_analysis(self, username: str, influencer: Dict, hash_val: int) -> Dict:
@@ -470,6 +671,10 @@ class InfluencerImageAnalyzer:
         }
 
         analysis['profile_summary'] = self._generate_summary_fallback(analysis)
+
+        # LLM 기반 개인화된 페르소나 생성 (캐싱용)
+        analysis['llm_persona'] = self.generate_persona_with_llm(influencer, analysis)
+
         return analysis
 
 
@@ -519,12 +724,13 @@ class InfluencerRAG:
         if not self.collection:
             return
 
-        # 추가 메타데이터 구성 (FIS, 분류 포함)
+        # 추가 메타데이터 구성 (FIS, 분류, LLM 페르소나 포함)
         metadata = {
             "username": username,
             "influencer_type": inf_type,
             "fis_score": fis_score,
             "persona": analysis.get('influencer_persona', ''),
+            "llm_persona": analysis.get('llm_persona', ''),  # LLM 생성 개인화 페르소나
             "target_gender": analysis.get('target_audience', {}).get('primary_gender', ''),
             "target_age": analysis.get('target_audience', {}).get('age_range', ''),
             "main_mood": analysis.get('content_characteristics', {}).get('main_mood', ''),
@@ -597,7 +803,12 @@ class InfluencerRAG:
 
     def search(self, query: str, top_k: int = 10, filters: Dict = None, min_fis: float = 60.0) -> List[Dict]:
         """
-        쿼리로 적합한 인플루언서 검색 (FIS 필터링 적용)
+        쿼리로 적합한 인플루언서 검색 (Multi-Signal Hybrid Scoring 적용)
+
+        학술적 기반:
+        - Reciprocal Rank Fusion (RRF): Cormack et al., 2009 - 순위 기반 점수 융합
+        - Temperature Scaling: Hinton et al. - 점수 분포 캘리브레이션
+        - Multi-Signal Hybrid: 다중 신호 가중 조합
 
         Args:
             query: 검색 쿼리 (브랜드 + 제품 + 캠페인 설명)
@@ -606,7 +817,7 @@ class InfluencerRAG:
             min_fis: 최소 FIS 점수 (이 이상만 반환)
 
         Returns:
-            검색 결과 리스트 (FIS 가중치 적용된 점수 포함)
+            검색 결과 리스트 (Hybrid 점수 포함)
         """
         if not self.collection:
             return self._fallback_search(query, top_k)
@@ -629,9 +840,11 @@ class InfluencerRAG:
             include=["documents", "metadatas", "distances"]
         )
 
-        # 결과 정리 및 FIS 가중치 적용
+        # 결과 정리 및 Multi-Signal Hybrid Scoring 적용
         output = []
         if results and results['ids'] and results['ids'][0]:
+            # 1단계: 기본 데이터 수집
+            candidates = []
             for i, username in enumerate(results['ids'][0]):
                 metadata = results['metadatas'][0][i] if results['metadatas'] else {}
                 fis_score = metadata.get('fis_score', 80.0)
@@ -640,26 +853,132 @@ class InfluencerRAG:
                 if fis_score < min_fis:
                     continue
 
-                # 기본 유사도 점수
-                base_score = 1 - results['distances'][0][i] if results['distances'] else 0
+                # 벡터 유사도 점수 (0~1)
+                vector_similarity = 1 - results['distances'][0][i] if results['distances'] else 0
 
-                # FIS 가중치 적용 (FIS가 높을수록 점수 향상)
-                fis_weight = fis_score / 100.0
-                weighted_score = base_score * (0.7 + 0.3 * fis_weight)
-
-                output.append({
+                candidates.append({
                     'username': username,
-                    'score': weighted_score,
-                    'base_score': base_score,
+                    'vector_similarity': vector_similarity,
                     'fis_score': fis_score,
-                    'influencer_type': metadata.get('influencer_type', 'trendsetter'),
                     'metadata': metadata,
                     'matched_text': results['documents'][0][i][:200] if results['documents'] else ''
                 })
 
-        # FIS 가중 점수로 재정렬 후 top_k만 반환
-        output.sort(key=lambda x: x['score'], reverse=True)
+            if not candidates:
+                return []
+
+            # 2단계: Multi-Signal Hybrid Scoring
+            output = self._compute_hybrid_scores(candidates)
+
+        # top_k만 반환
         return output[:top_k]
+
+    def _compute_hybrid_scores(self, candidates: List[Dict]) -> List[Dict]:
+        """
+        Multi-Signal Hybrid Scoring 계산
+
+        3가지 신호를 결합:
+        1. Vector Similarity (벡터 유사도) - 의미적 매칭
+        2. FIS Score (신뢰도) - 계정 품질
+        3. RRF Rank Score (순위 점수) - 상대적 순위 차별화
+
+        수학적 공식:
+        hybrid_score = α × normalized_vector + β × normalized_fis + γ × rrf_score
+
+        여기서:
+        - α=0.50 (벡터 유사도 가중치)
+        - β=0.25 (FIS 가중치)
+        - γ=0.25 (RRF 순위 가중치)
+        - k=60 (RRF 상수, 논문 권장값)
+        """
+        import math
+
+        # 가중치 설정 (합계 = 1.0)
+        WEIGHT_VECTOR = 0.50  # 벡터 유사도
+        WEIGHT_FIS = 0.25     # FIS 신뢰도
+        WEIGHT_RRF = 0.25     # RRF 순위 점수
+
+        # RRF 상수 (Cormack et al., 2009 논문 권장값)
+        RRF_K = 60
+
+        # Temperature for softmax (점수 분포 조절)
+        TEMPERATURE = 0.5  # 낮을수록 차이가 커짐
+
+        # 1. Min-Max 정규화를 위한 범위 계산
+        vector_scores = [c['vector_similarity'] for c in candidates]
+        fis_scores = [c['fis_score'] for c in candidates]
+
+        vector_min, vector_max = min(vector_scores), max(vector_scores)
+        fis_min, fis_max = min(fis_scores), max(fis_scores)
+
+        # 범위가 0인 경우 처리
+        vector_range = vector_max - vector_min if vector_max > vector_min else 1.0
+        fis_range = fis_max - fis_min if fis_max > fis_min else 1.0
+
+        # 2. 벡터 유사도 순위로 정렬 (RRF 계산용)
+        sorted_by_vector = sorted(candidates, key=lambda x: x['vector_similarity'], reverse=True)
+        vector_rank_map = {c['username']: rank + 1 for rank, c in enumerate(sorted_by_vector)}
+
+        # 3. FIS 순위로 정렬 (RRF 계산용)
+        sorted_by_fis = sorted(candidates, key=lambda x: x['fis_score'], reverse=True)
+        fis_rank_map = {c['username']: rank + 1 for rank, c in enumerate(sorted_by_fis)}
+
+        # 4. 각 후보에 대해 Hybrid Score 계산
+        results = []
+        for c in candidates:
+            username = c['username']
+
+            # 4.1 Min-Max 정규화된 벡터 점수
+            normalized_vector = (c['vector_similarity'] - vector_min) / vector_range
+
+            # 4.2 Min-Max 정규화된 FIS 점수
+            normalized_fis = (c['fis_score'] - fis_min) / fis_range
+
+            # 4.3 RRF 점수 계산 (두 순위의 RRF 평균)
+            # RRF(d) = Σ 1/(k + rank_i(d))
+            vector_rank = vector_rank_map[username]
+            fis_rank = fis_rank_map[username]
+
+            rrf_vector = 1.0 / (RRF_K + vector_rank)
+            rrf_fis = 1.0 / (RRF_K + fis_rank)
+            rrf_combined = (rrf_vector + rrf_fis) / 2
+
+            # RRF 정규화 (최대 RRF = 1/(k+1), 최소 ≈ 0)
+            rrf_max = 1.0 / (RRF_K + 1)
+            rrf_normalized = rrf_combined / rrf_max
+
+            # 4.4 Hybrid Score 계산
+            hybrid_score = (
+                WEIGHT_VECTOR * normalized_vector +
+                WEIGHT_FIS * normalized_fis +
+                WEIGHT_RRF * rrf_normalized
+            )
+
+            # 4.5 Temperature Scaling 적용 (점수 분포 확대)
+            # Softmax-like transformation: score^(1/T)
+            # T < 1이면 점수 차이가 확대됨
+            scaled_score = math.pow(hybrid_score, 1.0 / TEMPERATURE) if hybrid_score > 0 else 0
+
+            results.append({
+                'username': username,
+                'score': scaled_score,
+                'hybrid_score': hybrid_score,
+                'vector_similarity': c['vector_similarity'],
+                'normalized_vector': normalized_vector,
+                'fis_score': c['fis_score'],
+                'normalized_fis': normalized_fis,
+                'rrf_score': rrf_normalized,
+                'vector_rank': vector_rank,
+                'fis_rank': fis_rank,
+                'influencer_type': c['metadata'].get('influencer_type', 'trendsetter'),
+                'metadata': c['metadata'],
+                'matched_text': c['matched_text']
+            })
+
+        # Hybrid Score로 정렬
+        results.sort(key=lambda x: x['score'], reverse=True)
+
+        return results
 
     def _fallback_search(self, query: str, top_k: int) -> List[Dict]:
         """ChromaDB 없을 때 폴백 검색"""

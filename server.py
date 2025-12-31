@@ -2,12 +2,20 @@
 AI 헤어 인플루언서 큐레이션 에이전트 - FastAPI 서버
 ==================================================
 
+학술적 알고리즘 기반 인플루언서 추천 시스템
+
 파이프라인:
-1. 크롤링: 브랜드 데이터 (LLM 구조화)
-2. 처리: FIS 측정, 분류, 이미지 분석
-3. 벡터화: 브랜드/인플루언서 벡터맵 생성
-4. 매칭: 코사인 유사도 × FIS
-5. LLM 분석: 자연어 입력 처리
+1. 크롤링: 브랜드/인플루언서 데이터 수집 (Instagram Graph API)
+2. 분석: FIS 허수 탐지 (Benford's Law + Chi-squared)
+3. 분류: Expert/Trendsetter (TF-IDF + Cosine Similarity)
+4. 인덱싱: ChromaDB 벡터 저장 + LLM 페르소나 생성
+5. 검색: Hybrid Scoring (Vector + FIS + RRF)
+6. 추천: Temperature Scaling + 상세 추천 사유
+
+핵심 기술:
+- RAG: ChromaDB + OpenAI Embeddings
+- LLM: GPT-4o-mini (페르소나 생성)
+- 알고리즘: Benford's Law, TF-IDF, RRF, Temperature Scaling
 
 실행: python server.py
 API 문서: http://localhost:8000/docs
